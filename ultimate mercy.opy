@@ -1,105 +1,125 @@
 #Global variables
 
-globalvar mercyDummy 0
+globalvar ultVoicelineDummy 0
 globalvar rezEventOrder 1
 globalvar rezEventCaster 2
 globalvar rezEventTarget 3
 globalvar rezEventKillfeed 4
-globalvar rezEventAbility 5
-globalvar criticalHealthPlayers 6
-globalvar gameQuickAssemble 7
-globalvar gameQuickSetup 8
-globalvar mercyRegenHealingPercent 9
-globalvar mercyYellowbeamHealingPercent 10
-globalvar mercyGACooldownPercent 11
-globalvar mercyRezCooldownPercent 12
-globalvar mercyPlayersInSpawn 13
-globalvar mercyPlayersInMercySetup 14
-globalvar mercySetupPresetName 15
-globalvar mercySetupPassiveName 16
-globalvar mercySetupPassiveDesc 17
-globalvar mercySetupWeaponName 18
-globalvar mercySetupWeaponDesc 19
-globalvar mercySetupAbility1Name 20
-globalvar mercySetupAbility1Desc 21
-globalvar mercySetupAbility2Name 22
-globalvar mercySetupAbility2Desc 23
-globalvar mercySetupUltimateName 24
-globalvar mercySetupUltimateDesc 25
-globalvar debugToggle 26
-globalvar debugHostStatusEffect 27
-globalvar debugHostInstaLockMercy 28
-globalvar debugHostPermaUlt 29
-globalvar debugHostHurtSelfButton 30
-globalvar debugHostHurtPlayerButton 31
-globalvar debugHostKillSelfButton 32
-globalvar debugHostKillPlayerButton 33
-globalvar debugHostHealDummyButton 34
-globalvar debugHealDummy 35
-globalvar debugHostBoostDummyButton 36
-globalvar debugBoostDummy 37
-globalvar debugHostDamageDummyButton 38
-globalvar debugDamageDummy 39
-globalvar debugHostServerLoad 40
-globalvar debugHostSpeedometer 41
-globalvar debugHostTargeting 42
-globalvar debugPlayerPermaDeath 43
+globalvar rezEventAbilityName 5
+globalvar rezEventAbilityIcon 6
+globalvar criticalHealthPlayers 7
+globalvar fullNonShieldHealthPlayers 8
+globalvar gameQuickAssemble 9
+globalvar gameQuickSetup 10
+globalvar mercyRegenHealingPercent 11
+globalvar mercyYellowbeamHealingPercent 12
+globalvar mercyGACooldownPercent 13
+globalvar mercyRezCooldownPercent 14
+globalvar mercyPlayersCanSetup 15
+globalvar mercyPlayersInSetup 16
+globalvar mercySetupPresetList 17
+globalvar mercySetupPresetName 18
+globalvar mercySetupPresetDesc 19
+globalvar mercySetupPassiveName 20
+globalvar mercySetupPassiveDesc 21
+globalvar mercySetupWeaponName 22
+globalvar mercySetupWeaponDesc 23
+globalvar mercySetupAbility1Name 24
+globalvar mercySetupAbility1Desc 25
+globalvar mercySetupAbility2Name 26
+globalvar mercySetupAbility2Desc 27
+globalvar mercySetupUltimateName 28
+globalvar mercySetupUltimateDesc 29
+globalvar debugToggle 30
+globalvar debugHostStatusEffect 31
+globalvar debugHostInstaLockMercy 32
+globalvar debugHostPermaUlt 33
+globalvar debugHostHurtSelfButton 34
+globalvar debugHostHurtPlayerButton 35
+globalvar debugHostKillSelfButton 36
+globalvar debugHostKillPlayerButton 37
+globalvar debugHostHealDummyButton 38
+globalvar debugHealDummy 39
+globalvar debugHostBoostDummyButton 40
+globalvar debugBoostDummy 41
+globalvar debugHostDamageDummyButton 42
+globalvar debugDamageDummy 43
+globalvar debugHostServerLoad 44
+globalvar debugHostSpeedometer 45
+globalvar debugHostTargeting 46
+globalvar debugPlayerPermaDeath 47
 
 #Player variables
 
 playervar currentHero 0
 playervar isBeingResurrected 1
-playervar isInvulnerable 2
-playervar passiveHealMod 3
-playervar passiveEffect 4
-playervar beamTarget 5
-playervar beamRange 6
-playervar yellowbeamHealMod 7
-playervar yellowbeamFactor 8
-playervar gaRange 9
-playervar gaDirection 10
-playervar baDummy 11
-playervar baTarget 12
-playervar baInWorldText 13
-playervar rezTarget 14
-playervar rezVisualEffect 15
-playervar rezSoundEffect 16
-playervar rezCameraOffset 17
-playervar rezAssist 18
-playervar teamIndex 19
-playervar teamColor 20
-playervar eyePositionOffset 21
-playervar massrezTargets 22
-playervar massrezCurTargetCount 23
-playervar massrezHUDSpacer 24
-playervar massrezHUDText 25
-playervar medigunTarget 26
-playervar medigunHealingFactor 27
-playervar currentOverhealth 28
-playervar overhealthPool 29
-playervar isVaccinated 30
-playervar vaccinatorVisualEffect1 31
-playervar vaccinatorVisualEffect2 32
-playervar vaccinatorSoundEffect 33
-playervar isCastingUbercharge 34
-playervar isUbercharged 35
-playervar uberchargeVisualEffect1 36
-playervar uberchargeVisualEffect2 37
-playervar uberchargeSoundEffect 38
-playervar isInMercySetup 39
-playervar mercySetupBar 40
-playervar mercySetupCurProgress 41
-playervar mercyPresetVersion 42
-playervar mercyPassiveVersion 43
-playervar mercyWeaponVersion 44
-playervar mercyAbility1Version 45
-playervar mercyAbility2Version 46
-playervar mercyUltimateVersion 47
+playervar isImmobile 2
+playervar isInvulnerable 3
+playervar hasSuperjumped 4
+playervar passiveHealMod 5
+playervar passiveEffect 6
+playervar beamTarget 7
+playervar beamRange 8
+playervar yellowbeamHealMod 9
+playervar yellowbeamFactor 10
+playervar gaRange 11
+playervar gaVelocity 12
+playervar gaLastKnownDirection 13
+playervar gaCanonDummy 14
+playervar baDummy 15
+playervar baTarget 16
+playervar rezTarget 17
+playervar rezLastCooldown 18
+playervar rezLastTimeElapsed 19
+playervar rezBonusChargeHUD 20
+playervar rezVisualEffect 21
+playervar rezSoundEffect 22
+playervar rezCameraOffset 23
+playervar rezAssist 24
+playervar teamIndex 25
+playervar teamColor 26
+playervar eyePositionOffset 27
+playervar massrezTargets 28
+playervar massrezCurTargetCount 29
+playervar massrezHUDSpacer 30
+playervar massrezHUDText 31
+playervar valkCanonDummy 32
+playervar valkCanonBar 33
+playervar valkCanonCurProgress 34
+playervar isValkDummy 35
+playervar medigunTarget 36
+playervar medigunHealingFactor 37
+playervar currentOverhealth 38
+playervar overhealthPool 39
+playervar isVaccinated 40
+playervar vaccinatorVisualEffect1 41
+playervar vaccinatorVisualEffect2 42
+playervar vaccinatorSoundEffect 43
+playervar isCastingUbercharge 44
+playervar isUbercharged 45
+playervar uberchargeVisualEffect1 46
+playervar uberchargeVisualEffect2 47
+playervar uberchargeSoundEffect 48
+playervar isInMercySetup 49
+playervar mercySetupBar 50
+playervar mercySetupCurProgress 51
+playervar mercySetupCurSetup 52
+playervar mercyPresetVersion 53
+playervar mercyPassiveVersion 54
+playervar mercyWeaponVersion 55
+playervar mercyAbility1Version 56
+playervar mercyAbility2Version 57
+playervar mercyUltimateVersion 58
+playervar isCastingExtendedUltimate 59
+playervar maxHealth 60
+playervar Z 61
 
 
 #Subroutine names
 
-subroutine createMercyDummy 0
+subroutine createUltVoicelineDummy 0
+subroutine destroyUltVoicelineDummy 1
+subroutine updateMercyPresetVersion 2
 
 
 #Activated extensions
@@ -109,38 +129,48 @@ subroutine createMercyDummy 0
 #!extension energyExplosionEffects
 
 
-def createMercyDummy():
-    @Name "create mercy dummy"
+def createUltVoicelineDummy():
+    @Name "create ult voiceline dummy"
     
+    destroyDummy(ultVoicelineDummy[eventPlayer.teamIndex].getTeam(), ultVoicelineDummy[eventPlayer.teamIndex].getSlot())
     createDummy(Hero.MERCY, eventPlayer.getTeam(), -1, eventPlayer.getPosition() + vect(0, 2.5, 0), eventPlayer.getFacingDirection())
-    mercyDummy[eventPlayer.teamIndex] = getLastCreatedEntity()
+    ultVoicelineDummy[eventPlayer.teamIndex] = getLastCreatedEntity()
     wait()
-    mercyDummy[eventPlayer.teamIndex].startForcingName(rezEventCaster)
-    mercyDummy[eventPlayer.teamIndex].setInvisibility(Invis.ALL)
-    mercyDummy[eventPlayer.teamIndex].setStatusEffect(null, Status.PHASED_OUT, 9999)
-    mercyDummy[eventPlayer.teamIndex].disablePlayerCollision()
-    mercyDummy[eventPlayer.teamIndex].disableEnvironmentCollision(true)
-    if rezEventAbility == abilityIconString(Hero.MERCY, Button.ABILITY_2):
-        mercyDummy[eventPlayer.teamIndex].startModifyingVoicelinePitch(1.1, false)
-    mercyDummy[eventPlayer.teamIndex].setUltCharge(100)
+    ultVoicelineDummy[eventPlayer.teamIndex].startForcingName(rezEventCaster)
+    ultVoicelineDummy[eventPlayer.teamIndex].setInvisibility(Invis.ALL)
+    ultVoicelineDummy[eventPlayer.teamIndex].setStatusEffect(null, Status.PHASED_OUT, 9999)
+    ultVoicelineDummy[eventPlayer.teamIndex].disablePlayerCollision()
+    ultVoicelineDummy[eventPlayer.teamIndex].disableEnvironmentCollision(true)
+    if rezEventAbilityIcon == abilityIconString(Hero.MERCY, Button.ABILITY_2):
+        ultVoicelineDummy[eventPlayer.teamIndex].startModifyingVoicelinePitch(1.1, false)
+    ultVoicelineDummy[eventPlayer.teamIndex].setUltCharge(100)
+    ultVoicelineDummy[eventPlayer.teamIndex].forceButtonPress(Button.ULTIMATE)
+    wait(0.016, Wait.RESTART_WHEN_TRUE)
+    ultVoicelineDummy[eventPlayer.teamIndex].attachTo(eventPlayer, vect(0, 0, 0))
+
+def destroyUltVoicelineDummy():
+    @Name "destroy ult voiceline dummy"
+
+    destroyDummy(ultVoicelineDummy[eventPlayer.teamIndex].getTeam(), ultVoicelineDummy[eventPlayer.teamIndex].getSlot())
 
 
-rule "update mercy dummy position":
-    @Event global
-    @Condition entityExists(mercyDummy) == true
+def updateMercyPresetVersion():
+    @Name "update mercy preset version"
 
-    do:
-        mercyDummy.teleport(rezEventCaster.getPosition() + vect(0, 2.5, 0))
-        wait()
-    while RULE_CONDITION
+    eventPlayer.mercySetupCurSetup = 10000 * eventPlayer.mercyPassiveVersion + 1000 * eventPlayer.mercyWeaponVersion + 100 * eventPlayer.mercyAbility1Version + 10 * eventPlayer.mercyAbility2Version + eventPlayer.mercyUltimateVersion
+    for eventPlayer.Z in range(len(mercySetupPresetList)):
+        if mercySetupPresetList[eventPlayer.Z] == eventPlayer.mercySetupCurSetup:
+            eventPlayer.mercyPresetVersion = eventPlayer.Z
+            return
+    eventPlayer.mercyPresetVersion = 0
 
 
 rule "global initialize":
-    mercyDummy = [null, null]
+    ultVoicelineDummy = [null, null]
     rezEventOrder = -1
     rezEventCaster = null
     rezEventTarget = null
-    rezEventAbility = null
+    rezEventAbilityIcon = null
     criticalHealthPlayers = []
     gameQuickAssemble = createWorkshopSetting(bool, "1 - GAME SETTINGS", "1A - QUICK ASSEMBLE", false, 0)
     gameQuickSetup = createWorkshopSetting(bool, "1 - GAME SETTINGS", "1B - QUICK SETUP", false, 1)
@@ -166,19 +196,21 @@ rule "global initialize":
     debugHostSpeedometer = createWorkshopSetting(bool, "99 - DEBUG", "99L - HOST SPEEDOMETER", false, 11)
     debugHostTargeting = createWorkshopSetting(bool, "99 - DEBUG", "99M - HOST TARGETING", false, 12)
     debugPlayerPermaDeath = createWorkshopSetting(bool, "99 - DEBUG", "99N - PLAYER PERMADEATH", false, 13)
-    mercySetupPresetName = ["CUSTOM", "MERCY 1.0", "MERCY 2.0", "MERCY 3.0", "MERCY 4.0", "MERCY 5.0", "MERCY 6.0", "MERCY 7.0"]
-    mercySetupPassiveName = ["REGENERATION 1.0", "REGENERATION 2.0", "SYMPATHETIC RECOVERY"]
-    mercySetupPassiveDesc = ["RECEIVE 20 HPS AFTER NOT TAKING DAMAGE FOR 1S", "22.5 HPS AFTER NOT TAKING DAMAGE FOR 1.5S", "RECEIVE 25% OF HEALING DEALT TO OTHERS"]
-    mercySetupWeaponName = ["CADUCEUS STAFF 1.0", "CADUCEUS STAFF 2.0", "CADUCEUS STAFF 3.0"]
-    mercySetupWeaponDesc = ["DEAL 60 HPS TO A TARGET / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 55 HPS TO A TARGET (+5 HPS DURING VALKYRIE) / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 45 HPS TO A TARGET (+15 HPS DURING VALKYRIE / +50% HPS WHEN TARGET IS AT CRITICAL HEALTH) / BOOST DAMAGE OF A TARGET BY 30%"]
-    mercySetupAbility1Name = ["GUARDIAN ANGEL 1.0", "GUARDIAN ANGEL 2.0", "GUARDIAN ANGEL 3.0", "GUARDIAN ANGEL 4.0", "BATTLE ANGEL"]
-    mercySetupAbility1Desc = ["FLY TO AN ALLY (1.5S CD / NO SLINGSHOT / NO SUPERJUMP)", "FLY TO AN ALLY (1.5 CD / FORWARD SLINGSHOT / SUPERJUMP AT LOW SPEEDS)", "FLY TO AN ALLY (1.5S CD / OMNIDIRECTIONAL SLINGSHOT / SUPERJUMP WHENEVER)", "FLY TO AN ALLY (2.5S CD / OMNIDIRECTIONAL SLINGSHOT / SUPERJUMP WHENEVER)", "FLY TO AN ALLY/ENEMY (2.5S CD / OMNIDIRECTIONAL SLINGSHOT / SUPERJUMP WHENEVER)"]
-    mercySetupAbility2Name = ["NONE", "RESURRECT 1.0", "RESURRECT 2.0", "RESURRECT 3.0", "RESURRECT (CANON) (NOT YET IMPLEMENTED)"]
-    mercySetupAbility2Desc = ["NO ABILITY 2 / -10% ULT COST", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30S CD / INSTANT CAST)", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30S CD / 1.75S CAST TIME / INSTANT CAST DURING VALKYRIE)", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30S CD / 1.75S CAST TIME)", "DEAL 100 HPS TO AN ALLY FOR 1.75S (15S CD)"]
-    mercySetupUltimateName = ["MASS RESURRECT", "VALKYRIE 1.0", "VALKYRIE 2.0 (NOT YET IMPLEMENTED)", "VALKYRIE 3.0"]
-    mercySetupUltimateDesc = ["REVIVE NEARBY DEAD ALLIES WITHIN A 15M RADIUS (DOES NOT REQUIRE LOS)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED / RESETS REZ ON CAST AND SHORTENS REZ CD)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED / GIVES A BONUS REZ CHARGE)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED)"]
-    mercyPlayersInSpawn = []
-    mercyPlayersInMercySetup = []
+    mercySetupPresetList = [11111, 11111, 12112, 12123, 12224, 12234, 13245, 23345, 34445, 35556, 46778]
+    mercySetupPresetName = ["CUSTOM", "MERCY (ALPHA)", "MERCY 1.0", "MERCY 2.0", "MERCY 3.0", "MERCY 4.0", "MERCY 5.0", "MERCY 6.0", "MERCY 7.0", "MERCY (CANON)", "TF2 MEDIC"]
+    mercySetupPresetDesc = ["CUSTOM PRESET", "14 MAY 2015", "24 MAY 2016 - 19 SEP 2017", "19 SEP 2017 - 17 OCT 2017", "17 OCT 2017 - 16 NOV 2017", "16 NOV 2017 - 30 JAN 2018", "30 JAN 2018 - 12 MAY 2022", "4 OCT 2022 - 7 FEB 2023", "7 FEB 2023 - CURRENT", "I'LL BE WATCHING OVER YOU", "LET'S GO PRACTICE MEDICINE"]
+    mercySetupPassiveName = ["REGENERATION 1.0", "REGENERATION 2.0", "SYMPATHETIC RECOVERY", "MEDIC'S REGENERATION (NOT YET IMPLEMENTED)"]
+    mercySetupPassiveDesc = ["RECEIVE 20 HPS AFTER NOT TAKING DAMAGE FOR 1 S", "RECEIVE 22.5 HPS AFTER NOT TAKING DAMAGE FOR 1.5 S", "RECEIVE 25% OF HEALING DEALT TO OTHERS", "CONSTANTLY RECEIVE 10 HPS (+12.5% HPS PER S, UP TO +100% HPS, TAKING DAMAGE RESETS BONUS / +100% HPS WHEN HEALING INJURED ALLIES / BONUSES STACK MULTIPLICATIVELY)"]
+    mercySetupWeaponName = ["CADUCEUS STAFF (ALPHA)", "CADUCEUS STAFF 1.0", "CADUCEUS STAFF 2.0", "CADUCEUS STAFF 3.0", "CADUCEUS STAFF (CANON)", "MEDIC'S MEDIGUN"]
+    mercySetupWeaponDesc = ["DEAL 50 HPS TO A TARGET (CAN'T HEAL SHIELD HEALTH) / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 60 HPS TO A TARGET / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 55 HPS TO A TARGET (+5 HPS DURING VALKYRIE) / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 45 HPS TO A TARGET (+33.3% HPS DURING VALKYRIE / +50% HPS WHEN TARGET IS AT CRITICAL HEALTH / BONUSES STACK MULTIPLICATIVELY) / BOOST DAMAGE OF A TARGET BY 30%", "DEAL 60 HPS TO A TARGET", "DEAL 30 HPS TO A TARGET (+25% HPS PER S FOR EACH ALLY, UP TO +200% HPS, EVERY 3 DAMAGE TAKEN BY AN ALLY REDUCES BONUS BY 1% FOR THAT ALLY)"]
+    mercySetupAbility1Name = ["GUARDIAN ANGEL 1.0", "GUARDIAN ANGEL 2.0", "GUARDIAN ANGEL 3.0", "GUARDIAN ANGEL 4.0", "GUARDIAN ANGEL (CANON)", "BATTLE ANGEL", "MEDIC'S HASTE (NOT YET IMPLEMENTED)"]
+    mercySetupAbility1Desc = ["FLY TO AN ALLY (1.5 S CD / NO SLINGSHOT OR NO SUPERJUMP)", "FLY TO AN ALLY (1.5 CD / FORWARD SLINGSHOT)", "FLY TO AN ALLY (1.5 S CD / OMNIDIRECTIONAL SLINGSHOT / SUPERJUMP WHENEVER)", "FLY TO AN ALLY (2.5 S CD / OMNIDIRECTIONAL SLINGSHOT, -20% SPEED DURING BACKWARDS SLINGSHOT / SUPERJUMP WHENEVER)", "FLY THE MAXIMUM DISTANCE (1.5 S CD / NO SLINGSHOT / NO SUPERJUMP)", "FLY TO AN ALLY/ENEMY (2.5 S CD / OMNIDIRECTIONAL SLINGSHOT / SUPERJUMP WHENEVER)", "NO ABILITY 1 / INCREASES MOVEMENT SPEED BY 40%"]
+    mercySetupAbility2Name = ["NONE", "RESURRECT 1.0", "RESURRECT 2.0", "RESURRECT 3.0", "RESURRECT (CANON) (NOT YET IMPLEMENTED)", "VALKYRIE (NOT YET IMPLEMENTED)", "MEDIC'S VACCINATOR"]
+    mercySetupAbility2Desc = ["NO ABILITY 2 / -10% ULT COST", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30 S CD / INSTANT CAST)", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30 S CD / 1.75 S CAST TIME / INSTANT CAST DURING VALKYRIE)", "REVIVE A NEARBY DEAD ALLY WITHIN A 5M RADIUS (30 S CD / 1.75 S CAST TIME)", "DEAL 100 HPS TO AN ALLY FOR 1.75 S (15 S CD)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY", "CREATE A BUBBLE FOR YOU AND YOUR HEALING TARGET, BLOCKING 50% INCOMING DAMAGE (2.5 S DURATION / 8 S CD)"]
+    mercySetupUltimateName = ["MASS RESURRECT (ALPHA)", "MASS RESURRECT", "VALKYRIE 1.0", "VALKYRIE 2.0", "VALKYRIE 3.0", "VALKYRIE (CANON)", "RESURRECT (NOT YET IMPLEMENTED)", "MEDIC'S UBERCHARGE"]
+    mercySetupUltimateDesc = ["REVIVE NEARBY DEAD ALLIES (15 M RADIUS / 1.5 S CAST TIME / DOES NOT REQUIRE LOS / IMMOBILE DURING CAST / -20% ULT COST)", "REVIVE NEARBY DEAD ALLIES (15 M RADIUS / 2.25 S CAST TIME / DOES NOT REQUIRE LOS / INVULNERABILITY DURING CAST)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (20 S DURATION / PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED / RESETS REZ ON CAST AND SHORTENS REZ CD)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (20 S DURATION / PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED / GIVES A BONUS REZ CHARGE)", "ENHANCE ALL ABILITIES AND GAIN THE ABILITY TO FLY (15 S DURATION / PASSIVE ALWAYS ACTIVE / CHAIN BEAM / INFINITE AMMO / INCREASES GA RANGE AND SPEED)", "GAIN THE ABILITY TO FLY (15 S DURATION / -50% ULT COST)", "REVIVE NEARBY DEAD ALLIES (8 M RADIUS / REQUIRES LOS / 1.25 S CAST TIME)", "BECOME INVINCIBLE FOR YOU AND YOUR HEALING TARGET (LASTS UP TO 10 S, MULTIPLE TARGETS REDUCE TOTAL DURATION)"]
+    mercyPlayersCanSetup = []
+    mercyPlayersInSetup = []
 
 
 rule "player initialize":
@@ -195,7 +227,7 @@ rule "player initialize":
     eventPlayer.yellowbeamHealMod = null
     eventPlayer.yellowbeamFactor = 60 / 45
     eventPlayer.gaRange = 30
-    eventPlayer.gaDirection = vect(0, 0, 0)
+    eventPlayer.gaVelocity = vect(0, 0, 0)
     eventPlayer.baTarget = null
     eventPlayer.rezTarget = null
     eventPlayer.rezVisualEffect = null
@@ -212,12 +244,7 @@ rule "player initialize":
     eventPlayer.mercySetupBar = null
     eventPlayer.mercySetupCurProgress = 0
     eventPlayer.isInMercySetup = false
-    eventPlayer.mercyPresetVersion = 7
-    # eventPlayer.mercyPassiveVersion = 1
-    # eventPlayer.mercyWeaponVersion = 1
-    # eventPlayer.mercyAbility1Version = 1
-    # eventPlayer.mercyAbility2Version = 1
-    # eventPlayer.mercyUltimateVersion = 1
+    eventPlayer.mercyPresetVersion = 8
 
 
 rule "mercy picked":
@@ -244,6 +271,7 @@ rule "mercy picked":
         eventPlayer.allowButton(Button.ULTIMATE)
     eventPlayer.eyePositionOffset = eventPlayer.getEyePosition() - eventPlayer.getPosition()
     eventPlayer.currentHero = eventPlayer.getCurrentHero()
+    eventPlayer.maxHealth = eventPlayer.getMaxHealth()
 
 
 rule "game quick assemble":
@@ -260,8 +288,16 @@ rule "game quick setup":
     @Condition gameQuickSetup == true
     @Condition isInSetup() == true
 
-    setMatchTime(30)
-    getPlayers(Team.1).teleport(getObjectivePosition(0) + vect(0, 5, 0))
+    setMatchTime(25)
+
+
+rule "game quick setup teleport":
+    @Event eachPlayer
+    @Condition gameQuickSetup == true
+    @Condition eventPlayer.hasSpawned() == true
+
+    wait()
+    eventPlayer.teleport(getObjectivePosition(0) + vect(0, 5, 0))
 
 
 rule "player is at critical health":
@@ -280,71 +316,96 @@ rule "player is no longer at critical health":
     criticalHealthPlayers.remove(eventPlayer)
 
 
-rule "casting rez with invalid target":
+rule "player is at full non shield health":
     @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.mercyAbility2Version == 2
-    @Condition eventPlayer.isUsingAbility2() == true
-    @Condition eventPlayer.rezTarget == null
+    @Condition eventPlayer.getHealthOfType(Health.NORMAL) >= eventPlayer.getMaxHealthOfType(Health.NORMAL)
     @Condition eventPlayer.isDummy() == false
 
-    eventPlayer.cancelPrimaryAction()
-    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
+    fullNonShieldHealthPlayers.append(eventPlayer)
 
 
-rule "casting rez with valid target(s)":
+rule "player is no longer at full non shield health":
+    @Event eachPlayer
+    @Condition eventPlayer.getHealthOfType(Health.NORMAL) < eventPlayer.getMaxHealthOfType(Health.NORMAL)
+    @Condition eventPlayer.isDummy() == false
+
+    fullNonShieldHealthPlayers.remove(eventPlayer)
+
+
+rule "casting rez":
     @Event eachPlayer
     @Hero mercy
-    @Condition ((eventPlayer.mercyAbility2Version == 2 or eventPlayer.mercyAbility2Version == 3 or eventPlayer.mercyAbility2Version == 4) and eventPlayer.isUsingAbility2()) or (eventPlayer.mercyUltimateVersion == 1 and eventPlayer.isHoldingButton(Button.ULTIMATE) and eventPlayer.getUltCharge() == 100 and eventPlayer.massrezTargets != null and eventPlayer.isAlive() and not eventPlayer.hasStatusEffect(Status.ASLEEP) and not eventPlayer.hasStatusEffect(Status.FROZEN) and not eventPlayer.hasStatusEffect(Status.HACKED) and not eventPlayer.hasStatusEffect(Status.KNOCKED_DOWN) and not eventPlayer.hasStatusEffect(Status.STUNNED)) == true
+    @Condition (eventPlayer.mercyAbility2Version in [2, 3, 4] and eventPlayer.isUsingAbility2()) or (eventPlayer.mercyUltimateVersion in [1, 2] and eventPlayer.isHoldingButton(Button.ULTIMATE) and eventPlayer.getUltCharge() == 100 and eventPlayer.massrezTargets != null and eventPlayer.isAlive() and not eventPlayer.hasStatusEffect(Status.ASLEEP) and not eventPlayer.hasStatusEffect(Status.FROZEN) and not eventPlayer.hasStatusEffect(Status.HACKED) and not eventPlayer.hasStatusEffect(Status.KNOCKED_DOWN) and not eventPlayer.hasStatusEffect(Status.STUNNED) and eventPlayer not in mercyPlayersInSetup) == true
     @Condition eventPlayer.isDummy() == false
     
     rezEventCaster = eventPlayer
     if eventPlayer.isUsingAbility2():
         if eventPlayer.mercyAbility2Version == 2 or (eventPlayer.mercyAbility2Version == 3 and eventPlayer.isUsingUltimate()):
             eventPlayer.cancelPrimaryAction()
-            eventPlayer.rezTarget = eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam())
-            eventPlayer.rezTarget.isBeingResurrected = true
-            eventPlayer.rezTarget.resurrect()
-            rezEventTarget = eventPlayer.rezTarget
-            rezEventAbility = abilityIconString(Hero.MERCY, Button.ABILITY_2)
-        elif eventPlayer.mercyAbility2Version == 3 or eventPlayer.mercyAbility2Version == 4:
+            eventPlayer.rezTarget = [(sorted([player for player in getDeadPlayers(eventPlayer.getTeam()) if distance(eventPlayer.getPosition() + eventPlayer.eyePositionOffset, player.getPosition() + vect(0, 1.2, 0)) <= 5.5], lambda i: angleBetweenVectors(eventPlayer.getFacingDirection(), vectorTowards(eventPlayer.getPosition(), i.getPosition()))))[0]]
+            if eventPlayer.rezTarget != null:
+                eventPlayer.rezTarget.isBeingResurrected = true
+                rezEventTarget = eventPlayer.rezTarget
+                rezEventAbilityName = "RESURRECT"
+                rezEventAbilityIcon = abilityIconString(Hero.MERCY, Button.ABILITY_2)
+            else:
+                eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
+                rezEventCaster = null
+                rezEventTarget = null
+                rezEventAbilityName = null
+                rezEventAbilityIcon = null
+                return
+        elif eventPlayer.mercyAbility2Version in [3, 4]:
             waitUntil(not eventPlayer.isUsingAbility2(), 99999)
         if eventPlayer.isUsingUltimate():
-            eventPlayer.setAbilityCooldown(Button.ABILITY_2, 7.5 * (mercyRezCooldownPercent / 100))
+            if eventPlayer.mercyUltimateVersion == 2:
+                eventPlayer.setAbilityCooldown(Button.ABILITY_2, 10 * (mercyRezCooldownPercent / 100))
+            elif eventPlayer.mercyUltimateVersion == 3 and eventPlayer.rezLastCooldown != -1 and eventPlayer.rezLastTimeElapsed != -1:
+                eventPlayer.setAbilityCooldown(Button.ABILITY_2, eventPlayer.rezLastCooldown - (getTotalTimeElapsed() - eventPlayer.rezLastTimeElapsed))
+                eventPlayer.rezLastCooldown = -1
+                eventPlayer.rezLastTimeElapsed = -1
+                destroyHudText(eventPlayer.rezBonusChargeHUD)
         else:
             eventPlayer.setAbilityCooldown(Button.ABILITY_2, 30 * (mercyRezCooldownPercent / 100))
         eventPlayer.rezTarget = null
-        if eventPlayer.mercyAbility2Version == 4:
+        if (eventPlayer.mercyAbility2Version == 3 and not eventPlayer.isUsingUltimate()) or eventPlayer.mercyAbility2Version == 4:
             return
     elif eventPlayer.isHoldingButton(Button.ULTIMATE):
         eventPlayer.massrezTargets.isBeingResurrected = true
-        eventPlayer.massrezTargets.resurrect()
         rezEventTarget = eventPlayer.massrezTargets
-        rezEventAbility = abilityIconString(Hero.MERCY, Button.ULTIMATE)
-        eventPlayer.isInvulnerable = true
+        rezEventAbilityName = "MASS RESURRECT"
+        rezEventAbilityIcon = abilityIconString(Hero.MERCY, Button.ULTIMATE)
+        if eventPlayer.mercyUltimateVersion == 1:
+            eventPlayer.isImmobile = true
+        elif eventPlayer.mercyUltimateVersion == 2:
+            eventPlayer.isInvulnerable = true
         eventPlayer.setUltCharge(0)
         eventPlayer.massrezTargets = null
-    eventPlayer.cancelPrimaryAction()
     eventPlayer.startGrantingAssistFor(rezEventTarget, AssistReeval.NONE)
     rezEventTarget.rezAssist = [getLastAssistID(), getTotalTimeElapsed()]
-    playEffect(getAllPlayers().exclude(eventPlayer), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1.5)
+    playEffect(getPlayers(eventPlayer.getTeam()), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition() + vect(eventPlayer.getFacingDirection().x * 0.25, 1.5, eventPlayer.getFacingDirection().z * 0.25), 1)
+    playEffect(getPlayers(getOppositeTeam(eventPlayer.getTeam())), DynamicEffect.GOOD_PICKUP_EFFECT, Color.ORANGE, eventPlayer.getPosition() + vect(eventPlayer.getFacingDirection().x * 0.25, 1.5, eventPlayer.getFacingDirection().z * 0.25), 1)
+    createUltVoicelineDummy()
     wait()
     rezEventTarget.setHealth(1)
     heal(rezEventTarget, eventPlayer, 9999)
     rezEventTarget.setHealth(rezEventTarget.getMaxHealth() - 1)
     heal(rezEventTarget, eventPlayer, 9999)
-    rezEventTarget = null
-    destroyDummy(mercyDummy[eventPlayer.teamIndex].getTeam(), mercyDummy[eventPlayer.teamIndex].getSlot())
-    createMercyDummy()
-    wait()
-    mercyDummy[eventPlayer.teamIndex].forceButtonPress(Button.ULTIMATE)
     eventPlayer.cancelPrimaryAction()
-    wait(0.168, Wait.RESTART_WHEN_TRUE)
+    wait(0.184, Wait.RESTART_WHEN_TRUE)
     eventPlayer.setAbilityCooldown(Button.ABILITY_1, 0)
+    if len(rezEventTarget) == 1:
+        smallMessage(eventPlayer, "   {0}  SAVED {1} ({2})".format(iconString(Icon.HEART), rezEventTarget[0], rezEventTarget[0].getCurrentHero()))
+    else:
+        smallMessage(eventPlayer, "   {0}  SAVED {1} PLAYERS".format(iconString(Icon.HEART), len(rezEventTarget)))
     wait(0.55, Wait.RESTART_WHEN_TRUE)
     playEffect(getAllPlayers().exclude(eventPlayer), DynamicEffect.GOOD_EXPLOSION, Color.YELLOW, eventPlayer.getEyePosition() + (eventPlayer.getFacingDirection() * vect(1.5, 2, 1.5)), 2)
-    wait(0.85, Wait.RESTART_WHEN_TRUE)
-    destroyDummy(mercyDummy[eventPlayer.teamIndex].getTeam(), mercyDummy[eventPlayer.teamIndex].getSlot())
+    rezEventCaster = null
+    rezEventTarget = null
+    rezEventAbilityName = null
+    rezEventAbilityIcon = null
+    wait(0.75, Wait.RESTART_WHEN_TRUE)
+    destroyUltVoicelineDummy()
 
 
 rule "getting rez'd":
@@ -352,9 +413,9 @@ rule "getting rez'd":
     @Condition eventPlayer.isBeingResurrected == true
     @Condition eventPlayer.isDummy() == false
     
+    eventPlayer.resurrect()
     bigMessage(eventPlayer, "REVIVING")
-    smallMessage(rezEventCaster, " {0} SAVED {1} ".format(heroIcon(eventPlayer.getCurrentHero()), eventPlayer))
-    eventPlayer.rezCameraOffset = normalize(eventPlayer.getFacingDirection()) * -3
+    eventPlayer.rezCameraOffset = raycast(eventPlayer.getEyePosition(), eventPlayer.getEyePosition() + normalize(eventPlayer.getFacingDirection()) * -3, null, null, false).getHitPosition() - eventPlayer.getEyePosition()
     eventPlayer.startCamera(eventPlayer.getEyePosition() + eventPlayer.rezCameraOffset, eventPlayer.getEyePosition(), 6)
     eventPlayer.startFacing(eventPlayer.getFacingDirection(), 9999, Relativity.TO_WORLD, FacingReeval.NONE)
     eventPlayer.setStatusEffect(null, Status.PHASED_OUT, 2.25)
@@ -371,7 +432,8 @@ rule "getting rez'd":
     eventPlayer.disallowButton(Button.ULTIMATE)
     playEffect(getAllPlayers(), DynamicEffect.BRIGITTE_REPAIR_PACK_IMPACT, eventPlayer.teamColor, eventPlayer.getPosition() + vect(0, 1.25, 0), 1)
     playEffect(getAllPlayers(), DynamicEffect.TRACER_RECALL_REAPPEAR, eventPlayer.teamColor, eventPlayer.getPosition() + vect(0, 1.25, 0), 1)
-    playEffect(getAllPlayers(), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1.25)
+    playEffect(getPlayers(eventPlayer.getTeam()), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1)
+    playEffect(getPlayers(getOppositeTeam(eventPlayer.getTeam())), DynamicEffect.GOOD_PICKUP_EFFECT, Color.ORANGE, eventPlayer.getPosition(), 1)
     playEffect(getAllPlayers(), DynamicEffect.ANA_BIOTIC_GRENADE_INCREASED_HEALING_SOUND, Color.WHITE, eventPlayer.getPosition(), 100)
     createEffect(getAllPlayers(), Effect.BAPTISTE_IMMORTALITY_FIELD_PROTECTED, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.POSITION_AND_RADIUS)
     eventPlayer.rezVisualEffect = getLastCreatedEntity()
@@ -399,6 +461,19 @@ rule "getting rez'd":
     eventPlayer.isBeingResurrected = false
 
 
+rule "getting immobility":
+    @Event eachPlayer
+    @Condition eventPlayer.isImmobile == true
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.setStatusEffect(null, Status.ROOTED, 1.5)
+    playEffect(getPlayers(eventPlayer.getTeam()), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1.25)
+    playEffect(getPlayers(getOppositeTeam(eventPlayer.getTeam())), DynamicEffect.GOOD_PICKUP_EFFECT, Color.ORANGE, eventPlayer.getPosition(), 1.25)
+    playEffect(getAllPlayers(), DynamicEffect.ANA_BIOTIC_GRENADE_INCREASED_HEALING_SOUND, Color.WHITE, eventPlayer.getPosition(), 100)
+    wait(1.5, Wait.RESTART_WHEN_TRUE)
+    eventPlayer.isImmobile = false
+
+
 rule "getting invulnerability":
     @Event eachPlayer
     @Condition eventPlayer.isInvulnerable == true
@@ -407,7 +482,8 @@ rule "getting invulnerability":
     eventPlayer.setStatusEffect(null, Status.PHASED_OUT, 2.25)
     playEffect(getAllPlayers(), DynamicEffect.BRIGITTE_REPAIR_PACK_IMPACT, eventPlayer.teamColor, eventPlayer.getPosition() + vect(0, 1.25, 0), 1)
     playEffect(getAllPlayers(), DynamicEffect.TRACER_RECALL_REAPPEAR, eventPlayer.teamColor, eventPlayer.getPosition() + vect(0, 1.25, 0), 1)
-    playEffect(getAllPlayers(), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1.25)
+    playEffect(getPlayers(eventPlayer.getTeam()), DynamicEffect.GOOD_PICKUP_EFFECT, Color.YELLOW, eventPlayer.getPosition(), 1.25)
+    playEffect(getPlayers(getOppositeTeam(eventPlayer.getTeam())), DynamicEffect.GOOD_PICKUP_EFFECT, Color.ORANGE, eventPlayer.getPosition(), 1.25)
     playEffect(getAllPlayers(), DynamicEffect.ANA_BIOTIC_GRENADE_INCREASED_HEALING_SOUND, Color.WHITE, eventPlayer.getPosition(), 100)
     createEffect(getAllPlayers(), Effect.BAPTISTE_IMMORTALITY_FIELD_PROTECTED, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.POSITION_AND_RADIUS)
     eventPlayer.rezVisualEffect = getLastCreatedEntity()
@@ -425,7 +501,7 @@ rule "create rez event killfeed":
     @Condition eventPlayer.isBeingResurrected == true
     @Condition eventPlayer.isDummy() == false
 
-    hudHeader(getAllPlayers(), "{0} {1} > {2}".format("{0} {1}".format(rezEventCaster, heroIcon(rezEventCaster.getCurrentHero())), rezEventAbility, "{0} {1}".format(heroIcon(rezEventTarget[rezEventTarget.index(eventPlayer)].getCurrentHero()), rezEventTarget[rezEventTarget.index(eventPlayer)])), HudPosition.LEFT, rezEventOrder, eventPlayer.teamColor, HudReeval.NONE, SpecVisibility.DEFAULT)
+    hudHeader(getAllPlayers(), "{0} {1} > {2}".format("{0} {1}".format(rezEventCaster, heroIcon(rezEventCaster.getCurrentHero())), rezEventAbilityIcon, "{0} {1}".format(heroIcon(rezEventTarget[rezEventTarget.index(eventPlayer)].getCurrentHero()), rezEventTarget[rezEventTarget.index(eventPlayer)])), HudPosition.LEFT, rezEventOrder, eventPlayer.teamColor, HudReeval.NONE, SpecVisibility.DEFAULT)
     rezEventKillfeed[len(rezEventKillfeed)] = [getLastCreatedText(), getTotalTimeElapsed()]
     while len(rezEventKillfeed) > 4:
         destroyHudText(rezEventKillfeed[0][0])
@@ -454,59 +530,60 @@ rule "rez assist expired":
 rule "mercy setup menu":
     @Event global
 
-    progressBarHud(mercyPlayersInSpawn, localPlayer.mercySetupCurProgress, "HOLD [{0}] TO {1} MERCY SETUP".format(buttonString(Button.INTERACT), "CLOSE" if localPlayer in mercyPlayersInMercySetup else "OPEN"), HudPosition.TOP, 100, rgb(193, 112, 10), Color.WHITE, ProgressHudReeval.VISIBILITY_AND_VALUES, SpecVisibility.DEFAULT)
-    createEffect(mercyPlayersInMercySetup, Effect.ORB, Color.BLACK, updateEveryTick(localPlayer.getEyePosition() + (localPlayer.getFacingDirection() * 0.8)), 1, EffectReeval.VISIBILITY_POSITION_AND_RADIUS)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(heroIcon(Hero.MERCY), localPlayer.mercyPresetVersion), "[{0}] PRESET".format(buttonString(Button.CROUCH)), mercySetupPresetName[localPlayer.mercyPresetVersion], HudPosition.TOP, 101, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, " ", HudPosition.TOP, 102, Color.WHITE, HudReeval.VISIBILITY)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(iconString(Icon.PLUS), localPlayer.mercyPassiveVersion), "[{0}] PASSIVE".format(buttonString(Button.RELOAD)), mercySetupPassiveName[localPlayer.mercyPassiveVersion - 1], HudPosition.TOP, 103, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, mercySetupPassiveDesc[localPlayer.mercyPassiveVersion - 1], HudPosition.TOP, 104, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, " ", HudPosition.TOP, 105, Color.WHITE, HudReeval.VISIBILITY)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.PRIMARY_FIRE), localPlayer.mercyWeaponVersion), "[{0}] WEAPON".format(buttonString(Button.PRIMARY_FIRE)), mercySetupWeaponName[localPlayer.mercyWeaponVersion - 1], HudPosition.TOP, 106, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, mercySetupWeaponDesc[localPlayer.mercyWeaponVersion - 1], HudPosition.TOP, 107, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, " ", HudPosition.TOP, 108, Color.WHITE, HudReeval.VISIBILITY)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ABILITY_1), localPlayer.mercyAbility1Version), "[{0}] ABILITY 1".format(buttonString(Button.ABILITY_1)), mercySetupAbility1Name[localPlayer.mercyAbility1Version - 1], HudPosition.TOP, 109, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, mercySetupAbility1Desc[localPlayer.mercyAbility1Version - 1], HudPosition.TOP, 110, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, " ", HudPosition.TOP, 111, Color.WHITE, HudReeval.VISIBILITY)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ABILITY_2), localPlayer.mercyAbility2Version), "[{0}] ABILITY 2".format(buttonString(Button.ABILITY_2)), mercySetupAbility2Name[localPlayer.mercyAbility2Version - 1], HudPosition.TOP, 112, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, mercySetupAbility2Desc[localPlayer.mercyAbility2Version - 1], HudPosition.TOP, 113, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, " ", HudPosition.TOP, 114, Color.WHITE, HudReeval.VISIBILITY)
-    hudText(mercyPlayersInMercySetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ULTIMATE), localPlayer.mercyUltimateVersion), "[{0}] ULTIMATE".format(buttonString(Button.ULTIMATE)), mercySetupUltimateName[localPlayer.mercyUltimateVersion - 1], HudPosition.TOP, 115, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
-    hudSubheader(mercyPlayersInMercySetup, mercySetupUltimateDesc[localPlayer.mercyUltimateVersion - 1], HudPosition.TOP, 116, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    progressBarHud(mercyPlayersCanSetup, localPlayer.mercySetupCurProgress, "HOLD [{0}] TO {1} MERCY SETUP".format(buttonString(Button.INTERACT), "CLOSE" if localPlayer in mercyPlayersInSetup else "OPEN"), HudPosition.TOP, 100, rgb(193, 112, 10), Color.WHITE, ProgressHudReeval.VISIBILITY_AND_VALUES, SpecVisibility.DEFAULT)
+    createEffect(mercyPlayersInSetup, Effect.ORB, Color.BLACK, updateEveryTick(localPlayer.getEyePosition() + (localPlayer.getFacingDirection() * 0.8)), 1, EffectReeval.VISIBILITY_POSITION_AND_RADIUS)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(heroIcon(Hero.MERCY), localPlayer.mercyPresetVersion), "[{0}] PRESET".format(buttonString(Button.CROUCH)), mercySetupPresetName[localPlayer.mercyPresetVersion], HudPosition.TOP, 101, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupPresetDesc[localPlayer.mercyPresetVersion], HudPosition.TOP, 102, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, " ", HudPosition.TOP, 103, Color.WHITE, HudReeval.VISIBILITY)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(iconString(Icon.PLUS), localPlayer.mercyPassiveVersion), "[{0}] PASSIVE".format(buttonString(Button.RELOAD)), mercySetupPassiveName[localPlayer.mercyPassiveVersion - 1], HudPosition.TOP, 104, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupPassiveDesc[localPlayer.mercyPassiveVersion - 1], HudPosition.TOP, 105, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, " ", HudPosition.TOP, 106, Color.WHITE, HudReeval.VISIBILITY)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.PRIMARY_FIRE), localPlayer.mercyWeaponVersion), "[{0}] WEAPON".format(buttonString(Button.PRIMARY_FIRE)), mercySetupWeaponName[localPlayer.mercyWeaponVersion - 1], HudPosition.TOP, 107, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupWeaponDesc[localPlayer.mercyWeaponVersion - 1], HudPosition.TOP, 108, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, " ", HudPosition.TOP, 109, Color.WHITE, HudReeval.VISIBILITY)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ABILITY_1), localPlayer.mercyAbility1Version), "[{0}] ABILITY 1".format(buttonString(Button.ABILITY_1)), mercySetupAbility1Name[localPlayer.mercyAbility1Version - 1], HudPosition.TOP, 110, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupAbility1Desc[localPlayer.mercyAbility1Version - 1], HudPosition.TOP, 111, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, " ", HudPosition.TOP, 112, Color.WHITE, HudReeval.VISIBILITY)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ABILITY_2), localPlayer.mercyAbility2Version), "[{0}] ABILITY 2".format(buttonString(Button.ABILITY_2)), mercySetupAbility2Name[localPlayer.mercyAbility2Version - 1], HudPosition.TOP, 113, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupAbility2Desc[localPlayer.mercyAbility2Version - 1], HudPosition.TOP, 114, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, " ", HudPosition.TOP, 115, Color.WHITE, HudReeval.VISIBILITY)
+    hudText(mercyPlayersInSetup, "{0} {1}".format(abilityIconString(Hero.MERCY, Button.ULTIMATE), localPlayer.mercyUltimateVersion), "[{0}] ULTIMATE".format(buttonString(Button.ULTIMATE)), mercySetupUltimateName[localPlayer.mercyUltimateVersion - 1], HudPosition.TOP, 116, rgb(236, 233, 189), rgb(236, 233, 189), rgb(28, 239, 239), HudReeval.VISIBILITY_AND_STRING)
+    hudSubheader(mercyPlayersInSetup, mercySetupUltimateDesc[localPlayer.mercyUltimateVersion - 1], HudPosition.TOP, 117, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)
 
 
 rule "mercy player is in spawn":
     @Event eachPlayer
     @Hero mercy
-    @Condition isWaitingForPlayers() == true or isInSetup() == true or (isInSetup() == false and eventPlayer.isInSpawnRoom() == true)
+    @Condition isWaitingForPlayers() == true or isInSetup() == true or (not isInSetup() and eventPlayer.isInSpawnRoom()) == true
 
-    mercyPlayersInSpawn.append(eventPlayer)
+    mercyPlayersCanSetup.append(eventPlayer)
 
 
 rule "mercy player is no longer in spawn or no longer mercy":
     @Event eachPlayer
-    @Condition eventPlayer.currentHero != eventPlayer.getCurrentHero() or isWaitingForPlayers() == false or (isWaitingForPlayers() == false and isInSetup() == false and eventPlayer.isInSpawnRoom() == false)
+    @Condition eventPlayer.currentHero != eventPlayer.getCurrentHero() or (isWaitingForPlayers() or isInSetup() or (not isInSetup() and eventPlayer.isInSpawnRoom())) == false
 
-    mercyPlayersInSpawn = mercyPlayersInSpawn.exclude(eventPlayer)
-    mercyPlayersInMercySetup = mercyPlayersInMercySetup.exclude(eventPlayer)
+    mercyPlayersCanSetup = mercyPlayersCanSetup.exclude(eventPlayer)
+    mercyPlayersInSetup = mercyPlayersInSetup.exclude(eventPlayer)
 
 
 rule "mercy player is switching setup mode":
     @Event eachPlayer
     @Hero mercy
-    @Condition isWaitingForPlayers() == true or isInSetup() == true or (isInSetup() == false and eventPlayer.isInSpawnRoom() == true)
+    @Condition isWaitingForPlayers() == true or isInSetup() == true or (not isInSetup() and eventPlayer.isInSpawnRoom()) == true
     @Condition eventPlayer.mercySetupCurProgress < 100
     @Condition eventPlayer.isHoldingButton(Button.INTERACT) == true
 
     do:
-        if eventPlayer not in mercyPlayersInMercySetup:
+        if eventPlayer not in mercyPlayersInSetup:
             eventPlayer.mercySetupCurProgress += 2.5
         else:
             eventPlayer.mercySetupCurProgress += 5
         wait()
     while RULE_CONDITION
     if eventPlayer.mercySetupCurProgress == 100:
-        if eventPlayer not in mercyPlayersInMercySetup:
-            mercyPlayersInMercySetup.append(eventPlayer)
+        if eventPlayer not in mercyPlayersInSetup:
+            mercyPlayersInSetup.append(eventPlayer)
             eventPlayer.setStatusEffect(null, Status.ROOTED, 99999)
             eventPlayer.disallowButton(Button.PRIMARY_FIRE)
             eventPlayer.disallowButton(Button.SECONDARY_FIRE)
@@ -517,7 +594,7 @@ rule "mercy player is switching setup mode":
             eventPlayer.disallowButton(Button.MELEE)
             eventPlayer.disallowButton(Button.RELOAD)
         else:
-            mercyPlayersInMercySetup = mercyPlayersInMercySetup.exclude(eventPlayer)
+            mercyPlayersInSetup = mercyPlayersInSetup.exclude(eventPlayer)
     eventPlayer.mercySetupCurProgress = 0
     waitUntil(not eventPlayer.isHoldingButton(Button.INTERACT), 99999)
 
@@ -525,152 +602,84 @@ rule "mercy player is switching setup mode":
 rule "mercy player is changing preset":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.CROUCH) == true
 
     eventPlayer.mercyPresetVersion += 1
     if eventPlayer.mercyPresetVersion >= len(mercySetupPresetName):
         eventPlayer.mercyPresetVersion = 1
-    switch eventPlayer.mercyPresetVersion:
-        case 1:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 1
-            eventPlayer.mercyAbility2Version = 1
-            eventPlayer.mercyUltimateVersion = 1
-            break
-        case 2:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 1
-            eventPlayer.mercyAbility2Version = 2
-            eventPlayer.mercyUltimateVersion = 2
-            break
-        case 3:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 2
-            eventPlayer.mercyUltimateVersion = 3
-            break
-        case 4:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 3
-            eventPlayer.mercyUltimateVersion = 3
-            break
-        case 5:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 2
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
-            break
-        case 6:
-            eventPlayer.mercyPassiveVersion = 2
-            eventPlayer.mercyWeaponVersion = 2
-            eventPlayer.mercyAbility1Version = 3
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
-            break
-        case 7:
-            eventPlayer.mercyPassiveVersion = 3
-            eventPlayer.mercyWeaponVersion = 3
-            eventPlayer.mercyAbility1Version = 4
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
-            break
-        default:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 1
-            eventPlayer.mercyAbility2Version = 1
-            eventPlayer.mercyUltimateVersion = 1
+    eventPlayer.mercyPassiveVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 10000)
+    eventPlayer.mercyWeaponVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 1000 % 10)
+    eventPlayer.mercyAbility1Version = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 100 % 100 % 10)
+    eventPlayer.mercyAbility2Version = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 10 % 1000 % 100 % 10)
+    eventPlayer.mercyUltimateVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] % 10000 % 1000 % 100 % 10)
 
 
 rule "mercy player is changing passive":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.RELOAD) == true
 
-    eventPlayer.mercyPresetVersion = 0
     eventPlayer.mercyPassiveVersion += 1
     if eventPlayer.mercyPassiveVersion > len(mercySetupPassiveName):
         eventPlayer.mercyPassiveVersion = 1
+    updateMercyPresetVersion()
 
 
 rule "mercy player is changing weapon":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.PRIMARY_FIRE) == true
     @Condition eventPlayer.isHoldingButton(Button.JUMP) == false
 
-    eventPlayer.mercyPresetVersion = 0
     eventPlayer.mercyWeaponVersion += 1
     if eventPlayer.mercyWeaponVersion > len(mercySetupWeaponName):
         eventPlayer.mercyWeaponVersion = 1
-
-
-rule "mercy player is changing weapon":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
-    @Condition eventPlayer.isHoldingButton(Button.PRIMARY_FIRE) == true
-    @Condition eventPlayer.isHoldingButton(Button.JUMP) == true
-
-    eventPlayer.mercyPresetVersion = 0
-    eventPlayer.mercyWeaponVersion = 4
+    updateMercyPresetVersion()
 
 
 rule "mercy player is changing ability 1":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.ABILITY_1) == true
 
-    eventPlayer.mercyPresetVersion = 0
     eventPlayer.mercyAbility1Version += 1
     if eventPlayer.mercyAbility1Version > len(mercySetupAbility1Name):
         eventPlayer.mercyAbility1Version = 1
+    updateMercyPresetVersion()
 
 
 rule "mercy player is changing ability 2":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.ABILITY_2) == true
 
-    eventPlayer.mercyPresetVersion = 0
     eventPlayer.mercyAbility2Version += 1
     if eventPlayer.mercyAbility2Version > len(mercySetupAbility2Name):
         eventPlayer.mercyAbility2Version = 1
+    updateMercyPresetVersion()
 
 
 rule "mercy player is changing ultimate":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer in mercyPlayersInMercySetup
-    @Condition eventPlayer.mercyPresetVersion <= 7
+    @Condition eventPlayer in mercyPlayersInSetup
     @Condition eventPlayer.isHoldingButton(Button.ULTIMATE) == true
 
-    eventPlayer.mercyPresetVersion = 0
     eventPlayer.mercyUltimateVersion += 1
     if eventPlayer.mercyUltimateVersion > len(mercySetupUltimateName):
         eventPlayer.mercyUltimateVersion = 1
+    updateMercyPresetVersion()
 
 
 rule "setup mercy character":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer not in mercyPlayersInSetup
     
     eventPlayer.clearStatusEffect(Status.ROOTED)
     eventPlayer.allowButton(Button.PRIMARY_FIRE)
@@ -681,87 +690,68 @@ rule "setup mercy character":
     eventPlayer.allowButton(Button.RELOAD)
     stopHealingModification(eventPlayer.passiveHealMod)
     stopHoT(eventPlayer.passiveEffect)
-    switch eventPlayer.mercyPresetVersion:
-        case 1:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 1
-            eventPlayer.mercyAbility2Version = 1
-            eventPlayer.mercyUltimateVersion = 1
-            break
-        case 2:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 1
-            eventPlayer.mercyAbility2Version = 2
-            eventPlayer.mercyUltimateVersion = 2
-            break
-        case 3:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 2
-            eventPlayer.mercyUltimateVersion = 3
-            break
-        case 4:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 1
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 3
-            eventPlayer.mercyUltimateVersion = 3
-            break
-        case 5:
-            eventPlayer.mercyPassiveVersion = 1
-            eventPlayer.mercyWeaponVersion = 2
-            eventPlayer.mercyAbility1Version = 2
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
-            break
-        case 6:
-            eventPlayer.mercyPassiveVersion = 2
-            eventPlayer.mercyWeaponVersion = 2
-            eventPlayer.mercyAbility1Version = 3
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
-            break
-        case 7:
-            eventPlayer.mercyPassiveVersion = 3
-            eventPlayer.mercyWeaponVersion = 3
-            eventPlayer.mercyAbility1Version = 4
-            eventPlayer.mercyAbility2Version = 4
-            eventPlayer.mercyUltimateVersion = 4
+    if eventPlayer.mercyWeaponVersion in [4, 5]:
+        eventPlayer.disallowButton(Button.SECONDARY_FIRE)
+    else:
+        eventPlayer.allowButton(Button.SECONDARY_FIRE)
+    if eventPlayer.mercyPresetVersion != 0:
+        eventPlayer.mercyPassiveVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 10000)
+        eventPlayer.mercyWeaponVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 1000 % 10)
+        eventPlayer.mercyAbility1Version = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 100 % 100 % 10)
+        eventPlayer.mercyAbility2Version = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] / 10 % 1000 % 100 % 10)
+        eventPlayer.mercyUltimateVersion = floor(mercySetupPresetList[eventPlayer.mercyPresetVersion] % 10000 % 1000 % 100 % 10)
     if eventPlayer.mercyPassiveVersion == 1 or eventPlayer.mercyPassiveVersion == 2:
         startHealingModification(eventPlayer, eventPlayer, 0, HealingReeval.NONE)
         eventPlayer.passiveHealMod = getLastHealingModification()
     destroyDummy(eventPlayer.baDummy.getTeam(), eventPlayer.baDummy.getSlot())
-    destroyInWorldText(eventPlayer.baInWorldText)
+
+    destroyDummy(eventPlayer.gaCanonDummy.getTeam(), eventPlayer.gaCanonDummy.getSlot())
+    destroyDummy(eventPlayer.baDummy.getTeam(), eventPlayer.baDummy.getSlot())
+    eventPlayer.setAbility1Enabled(true)
+    eventPlayer.setMoveSpeed(100)
     if eventPlayer.mercyAbility1Version == 5:
+        createDummy(hostPlayer.getCurrentHero(), hostPlayer.getTeam(), -1, vect(0, 0, 0), vect(0, 0, 0))
+        eventPlayer.gaCanonDummy = getLastCreatedEntity()
+        wait()
+        eventPlayer.gaCanonDummy.setRespawnTime(9999)
+        wait()
+        kill(eventPlayer.gaCanonDummy, null)
+        eventPlayer.gaCanonDummy.startForcingName(eventPlayer)
+        eventPlayer.gaCanonDummy.setInvisibility(Invis.ALL)
+        eventPlayer.gaCanonDummy.setGravity(0)
+        eventPlayer.gaCanonDummy.startForcingPosition(updateEveryTick(raycast(eventPlayer.getEyePosition(), eventPlayer.getEyePosition() + eventPlayer.getFacingDirection() * eventPlayer.gaRange, null, eventPlayer, false).getHitPosition() - eventPlayer.getFacingDirection() - vect(0, 1.1, 0)) if updateEveryTick(distance(eventPlayer, raycast(eventPlayer.getEyePosition(), eventPlayer.getEyePosition() + eventPlayer.getFacingDirection() * eventPlayer.gaRange, null, eventPlayer, false).getHitPosition() - eventPlayer.getFacingDirection() - vect(0, 1.1, 0))) > 6 else vect(0, 0, 0), true)
+    elif eventPlayer.mercyAbility1Version == 6:
         eventPlayer.baTarget = eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam()))
         createDummy(Hero.MERCY, eventPlayer.getTeam(), -1, eventPlayer.getPosition(), vect(0, 0, 0))
         eventPlayer.baDummy = getLastCreatedEntity()
+        wait()
+        eventPlayer.baDummy.setRespawnTime(9999)
+        wait()
+        kill(eventPlayer.baDummy, null)
         eventPlayer.baDummy.startForcingName(eventPlayer)
         eventPlayer.baDummy.setInvisibility(Invis.ALL)
-        eventPlayer.baDummy.setStatusEffect(null, Status.PHASED_OUT, 99999)
-        eventPlayer.baDummy.disablePlayerCollision()
-        eventPlayer.baDummy.disableEnvironmentCollision(true)
         eventPlayer.baDummy.setGravity(0)
-        eventPlayer.baDummy.attachTo(eventPlayer, vect(0, 35, 0))
-        createInWorldText(eventPlayer, abilityIconString(Hero.MERCY, Button.ABILITY_1), eventPlayer.baTarget.getPosition() + vect(0, 2, 0), 2, Clip.SURFACES, WorldTextReeval.VISIBILITY_AND_POSITION, Color.WHITE, SpecVisibility.DEFAULT)
-        eventPlayer.baInWorldText = getLastCreatedText()
+        eventPlayer.baDummy.startForcingPosition(updateEveryTick(eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).getPosition()) if updateEveryTick(eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).isAlive() and distance(eventPlayer, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam()))) > 6) else vect(0, 0, 0), true)
+    elif eventPlayer.mercyAbility1Version == 7:
+        eventPlayer.setAbility1Enabled(false)
+        eventPlayer.setMoveSpeed(140)
+
+    eventPlayer.setAbility2Enabled(true)
+    eventPlayer.allowButton(Button.ABILITY_2)
     if eventPlayer.mercyAbility2Version == 1:
         eventPlayer.setAbility2Enabled(false)
-    else:
-        eventPlayer.setAbility2Enabled(true)
-    if eventPlayer.mercyUltimateVersion == 1:
+    elif eventPlayer.mercyAbility2Version == 7:
+        eventPlayer.disallowButton(Button.ABILITY_2)
+    
+    eventPlayer.allowButton(Button.ULTIMATE)
+    if eventPlayer.mercyUltimateVersion in [1, 2, 6, 7, 8]:
         eventPlayer.disallowButton(Button.ULTIMATE)
-    else:
-        eventPlayer.allowButton(Button.ULTIMATE)
 
 
 rule "regen normal":
     @Event playerTookDamage
     @Hero mercy
-    @Condition eventPlayer.mercyPassiveVersion == 1 or eventPlayer.mercyPassiveVersion == 2
+    @Condition eventPlayer.mercyPassiveVersion in [1, 2]
     @Condition eventPlayer.isUsingUltimate() == false
     @Condition eventPlayer.isDummy() == false
 
@@ -809,41 +799,58 @@ rule "regen valk":
         stopHoT(eventPlayer.passiveEffect)
 
 
-rule "yellow beam 1.0 normal":
+rule "yellow beam alpha normal":
     @Event eachPlayer
     @Hero mercy
     @Condition eventPlayer.mercyWeaponVersion == 1
     @Condition eventPlayer.isUsingUltimate() == false
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer not in mercyPlayersInSetup
+    @Condition eventPlayer.isDummy() == false
+    
+    eventPlayer.yellowbeamFactor = (50 / 45) * 100
+
+
+rule "yellow beam alpha valk":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyWeaponVersion == 1
+    @Condition eventPlayer.mercyUltimateVersion == 2
+    @Condition eventPlayer.isUsingUltimate()
+    @Condition eventPlayer not in mercyPlayersInSetup
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.yellowbeamFactor = (50 / 60) * 100
+
+
+rule "yellow beam 1.0/canon normal":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyWeaponVersion == [2, 5]
+    @Condition eventPlayer.isUsingUltimate() == false
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
     
     eventPlayer.yellowbeamFactor = (60 / 45) * 100
 
 
-rule "yellow beam 1.0 valk":
+rule "yellow beam 1.0/canon valk":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 1
+    @Condition eventPlayer.mercyWeaponVersion == [2, 5]
     @Condition eventPlayer.mercyUltimateVersion == 2
-    @Condition eventPlayer.isUsingUltimate() == true
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer.isUsingUltimate()
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
 
-    eventPlayer.yellowbeamFactor = 100
-
-
-rule "yellow beam 1.0 critical":
-    @Event global
-
-    startHealingModification(criticalHealthPlayers, [player for player in getPlayersOnHero(Hero.MERCY, Team.ALL) if player.mercyWeaponVersion == 1], (60 / 90) * 100, HealingReeval.RECEIVERS_AND_HEALERS)
+    eventPlayer.yellowbeamFactor = (60 / 60) * 100
 
 
 rule "yellow beam 2.0 normal":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 2
+    @Condition eventPlayer.mercyWeaponVersion == 3
     @Condition eventPlayer.isUsingUltimate() == false
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
     
     eventPlayer.yellowbeamFactor = (55 / 45) * 100
@@ -852,31 +859,41 @@ rule "yellow beam 2.0 normal":
 rule "yellow beam 2.0 valk":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 2
+    @Condition eventPlayer.mercyWeaponVersion == 3
     @Condition eventPlayer.mercyUltimateVersion == 2
     @Condition eventPlayer.isUsingUltimate() == true
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
 
-    eventPlayer.yellowbeamFactor = 100
-
-
-rule "yellow beam 2.0 critical":
-    @Event global
-
-    startHealingModification(criticalHealthPlayers, [player for player in getPlayersOnHero(Hero.MERCY, Team.ALL) if player.mercyWeaponVersion == 2 and not player.isUsingUltimate()], (55 / 82.5) * 100, HealingReeval.RECEIVERS_AND_HEALERS)
-    startHealingModification(criticalHealthPlayers, [player for player in getPlayersOnHero(Hero.MERCY, Team.ALL) if player.mercyWeaponVersion == 2 and player.isUsingUltimate()], (60 / 90) * 100, HealingReeval.RECEIVERS_AND_HEALERS)
+    eventPlayer.yellowbeamFactor = (60 / 60) * 100
 
 
 rule "yellow beam 3.0":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 3
-    @Condition eventPlayer.isUsingUltimate() == false
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
     
-    eventPlayer.yellowbeamFactor = 100
+    eventPlayer.yellowbeamFactor = (45 / 45) * 100
+
+
+rule "yellow beam healing modifiers":
+    @Event global
+
+    startHealingModification(criticalHealthPlayers, [player for player in getPlayersOnHero(Hero.MERCY, Team.ALL) if player.mercyWeaponVersion != 4], 2 / 3 * 100, HealingReeval.RECEIVERS_AND_HEALERS)
+    startHealingModification(fullNonShieldHealthPlayers, [player for player in getPlayersOnHero(Hero.MERCY, Team.ALL) if player.mercyWeaponVersion == 1], 0, HealingReeval.RECEIVERS_AND_HEALERS)
+
+
+rule "gun weapon draw":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.getCurrentWeapon() == 2
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.disallowButton(Button.PRIMARY_FIRE)
+    waitUntil(eventPlayer.getCurrentWeapon() == 1, 0.5)
+    eventPlayer.allowButton(Button.PRIMARY_FIRE)
 
 
 rule "gun ammo":
@@ -893,22 +910,36 @@ rule "gun ammo":
         waitUntil(not eventPlayer.isReloading(), 10)
     while RULE_CONDITION
     eventPlayer.allowButton(Button.PRIMARY_FIRE)
+    if eventPlayer.isHoldingButton(Button.PRIMARY_FIRE):
+        eventPlayer.startForcingButton(Button.PRIMARY_FIRE)
+        waitUntil(not eventPlayer.isHoldingButton(Button.PRIMARY_FIRE) or eventPlayer.getAmmo(0) <= eventPlayer.getMaxAmmo(0) * 0.2 or eventPlayer.getCurrentWeapon() == 1, 99999)
+        eventPlayer.stopForcingButton(Button.PRIMARY_FIRE)
 
 
-rule "GA 1.0":
+rule "GA 1.0/canon":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyAbility1Version == 1
+    @Condition eventPlayer.mercyAbility1Version in [1, 5]
     @Condition eventPlayer.isUsingAbility1() == true
-    @Condition eventPlayer.isDummy() == false
+    @Condition eventPlayer.isDummy() == false or eventPlayer.isValkDummy == true
 
-    waitUntil(eventPlayer.isInAir(), 99999)
-    if eventPlayer.isInAir():
+    waitUntil(eventPlayer.isInAir() or not eventPlayer.isUsingAbility1(), 99999)
+    while eventPlayer.isUsingAbility1():
+        waitUntil(eventPlayer.isInAir() or not eventPlayer.isUsingAbility1(), 99999)
         eventPlayer.disallowButton(Button.JUMP)
         eventPlayer.disallowButton(Button.CROUCH)
-        waitUntil(not eventPlayer.isUsingAbility1(), 99999)
+        waitUntil(eventPlayer.isOnGround() or not eventPlayer.isUsingAbility1(), 99999)
+        wait(0.325)
         eventPlayer.allowButton(Button.JUMP)
         eventPlayer.allowButton(Button.CROUCH)
+        if eventPlayer.isHoldingButton(Button.JUMP):
+            eventPlayer.startForcingButton(Button.JUMP)
+            waitUntil(not eventPlayer.isHoldingButton(Button.JUMP) or eventPlayer.isUsingAbility1(), 99999)
+            eventPlayer.stopForcingButton(Button.JUMP)
+        elif eventPlayer.isHoldingButton(Button.CROUCH):
+            eventPlayer.startForcingButton(Button.CROUCH)
+            waitUntil(not eventPlayer.isHoldingButton(Button.CROUCH) or eventPlayer.isUsingAbility1(), 99999)
+            eventPlayer.stopForcingButton(Button.CROUCH)
 
 
 rule "GA 2.0":
@@ -918,45 +949,68 @@ rule "GA 2.0":
     @Condition eventPlayer.isUsingAbility1() == true
     @Condition eventPlayer.isDummy() == false
 
-    waitUntil(eventPlayer.isInAir(), 99999)
-    if eventPlayer.isInAir():
+    waitUntil(eventPlayer.isInAir() or not eventPlayer.isUsingAbility1(), 99999)
+    while eventPlayer.isUsingAbility1():
+        waitUntil(eventPlayer.isInAir() or not eventPlayer.isUsingAbility1(), 99999)
         eventPlayer.disallowButton(Button.JUMP)
         eventPlayer.disallowButton(Button.CROUCH)
-        eventPlayer.gaDirection = normalize(eventPlayer.getVelocity())
-        eventPlayer.startFacing(eventPlayer.gaDirection, 9999, Relativity.TO_WORLD, FacingReeval.DIRECTION_AND_TURN_RATE)
-        wait()
-        eventPlayer.gaDirection = directionTowards(eventPlayer, eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()))
         wait(0.1)
-        waitUntil(not eventPlayer.isUsingAbility1() or eventPlayer.isHoldingButton(Button.JUMP) or eventPlayer.isHoldingButton(Button.CROUCH), 99999)
-        if eventPlayer.isHoldingButton(Button.CROUCH) and eventPlayer.getSpeed() <= 9 and not eventPlayer.isUsingUltimate():
-            eventPlayer.allowButton(Button.CROUCH)
-            eventPlayer.forceButtonPress(Button.CROUCH)
-        elif eventPlayer.isHoldingButton(Button.JUMP) or eventPlayer.isHoldingButton(Button.CROUCH):
+        waitUntil(not eventPlayer.isUsingAbility1() or eventPlayer.isHoldingButton(Button.JUMP), 99999)
+        if eventPlayer.isHoldingButton(Button.JUMP) and not eventPlayer.hasSuperjumped:
+            eventPlayer.hasSuperjumped = true
+            eventPlayer.gaLastKnownDirection = eventPlayer.getFacingDirection()
+            eventPlayer.gaVelocity = normalize(eventPlayer.getVelocity())
+            eventPlayer.setFacing(eventPlayer.gaVelocity, Relativity.TO_WORLD)
+            wait(0.085)
             eventPlayer.allowButton(Button.JUMP)
             eventPlayer.forceButtonPress(Button.JUMP)
-            wait()
-            if eventPlayer.getThrottle().z == vect(0, 0, -1).z:
-                eventPlayer.applyImpulse(eventPlayer.gaDirection, 10, Relativity.TO_WORLD, Impulse.CANCEL_CONTRARY_MOTION_XYZ)
-        eventPlayer.stopFacing()
+            eventPlayer.setFacing(eventPlayer.gaLastKnownDirection, Relativity.TO_WORLD)
+            if eventPlayer.getThrottle() == Vector.BACKWARD:
+                wait()
+                eventPlayer.applyImpulse(eventPlayer.gaVelocity, eventPlayer.getSpeed() * 0.25, Relativity.TO_WORLD, Impulse.CANCEL_CONTRARY_MOTION_XYZ)
         eventPlayer.allowButton(Button.JUMP)
         eventPlayer.allowButton(Button.CROUCH)
+        if eventPlayer.isHoldingButton(Button.JUMP):
+            eventPlayer.startForcingButton(Button.JUMP)
+            waitUntil(not eventPlayer.isHoldingButton(Button.JUMP) or eventPlayer.isUsingAbility1(), 99999)
+            eventPlayer.stopForcingButton(Button.JUMP)
+        elif eventPlayer.isHoldingButton(Button.CROUCH):
+            eventPlayer.startForcingButton(Button.CROUCH)
+            waitUntil(not eventPlayer.isHoldingButton(Button.CROUCH) or eventPlayer.isUsingAbility1(), 99999)
+            eventPlayer.stopForcingButton(Button.CROUCH)
+        waitUntil(eventPlayer.isOnGround() or not eventPlayer.isUsingAbility1(), 99999)
+        eventPlayer.hasSuperjumped = false
 
 
-rule "GA cd":
+rule "GA 3.0 backwards slingshot speed":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyAbility1Version == 3
+    @Condition eventPlayer.isUsingAbility1() == true
+    @Condition eventPlayer.getThrottle() == Vector.BACKWARD
+    @Condition eventPlayer.isHoldingButton(Button.JUMP) == true
+    
+    waitUntil(eventPlayer.getSpeedInDirection(eventPlayer.getFacingDirection()) < 0, 1)
+    if eventPlayer.getSpeedInDirection(eventPlayer.getFacingDirection()) < 0:
+        eventPlayer.applyImpulse(normalize(eventPlayer.getVelocity()), eventPlayer.getSpeed() * 0.225, Relativity.TO_WORLD, Impulse.INCORPORATE_CONTRARY_MOTION)
+        waitUntil(not eventPlayer.isUsingAbility1(), 99999)
+
+
+rule "GA CD":
     @Event eachPlayer
     @Hero mercy
     @Condition eventPlayer.getAbilityCooldown(Button.ABILITY_1) > 0
 
-    if eventPlayer.mercyAbility1Version != 4 and eventPlayer.mercyAbility1Version != 5:
-        eventPlayer.setAbilityCooldown(Button.ABILITY_1, 1.5 * (mercyGACooldownPercent / 100))
+    if eventPlayer.mercyAbility1Version not in [4, 6]:
+        eventPlayer.setAbilityCooldown(Button.ABILITY_1, max(1.5 * (mercyGACooldownPercent / 100), 0.25))
     else:
-        eventPlayer.setAbilityCooldown(Button.ABILITY_1, 2.5 * (mercyGACooldownPercent / 100))
+        eventPlayer.setAbilityCooldown(Button.ABILITY_1, max(2.5 * (mercyGACooldownPercent / 100), 0.25))
 
 
 rule "GA range valk":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyUltimateVersion == 2
+    @Condition eventPlayer.mercyUltimateVersion in [3, 4, 5]
     @Condition eventPlayer.isUsingUltimate() == true
     @Condition eventPlayer.isDummy() == false
 
@@ -968,12 +1022,10 @@ rule "GA range valk":
 rule "GA speed valk":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyUltimateVersion == 2 or eventPlayer.mercyUltimateVersion == 3
+    @Condition eventPlayer.mercyUltimateVersion in [2, 3]
     @Condition eventPlayer.isUsingAbility1() == true
     @Condition eventPlayer.isUsingUltimate() == true
-    @Condition 4 <= distance(eventPlayer.getPosition() + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).getPosition() + vect(0, 1.2, 0)) and distance(eventPlayer.getPosition() + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).getPosition() + vect(0, 1.2, 0)) <= eventPlayer.gaRange + 0.5
-    @Condition isInLoS(eventPlayer.getEyePosition(), eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).getPosition() + vect(0, 1.2, 0), BarrierLos.PASS_THROUGH_BARRIERS) == true
-    # @Condition eventPlayer.isInViewAngle(eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()), 17.5) == true
+    @Condition eventPlayer.getSpeed() >= 9.25
     @Condition eventPlayer.isDummy() == false
     
     eventPlayer.setMoveSpeed(33 / 25 * 100)
@@ -981,101 +1033,18 @@ rule "GA speed valk":
     eventPlayer.setMoveSpeed(100)
 
 
-rule "BA target update":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.mercyAbility1Version == 5
-    # @Condition eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) != eventPlayer.baTarget
-    @Condition eventPlayer.getAbilityCooldown(Button.ABILITY_1) == 0
-    @Condition eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).isAlive() == true
-    @Condition 4 <= distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) and distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) <= eventPlayer.gaRange + 0.5
-    @Condition isInLoS(eventPlayer, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())), BarrierLos.PASS_THROUGH_BARRIERS) == true
-
-    do:
-        eventPlayer.baTarget = eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam()))
-        wait()
-    while RULE_CONDITION
-    eventPlayer.baTarget = null
-
-
-rule "BA attach update":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.mercyAbility1Version == 5
-    @Condition eventPlayer.baTarget != null
-    @Condition eventPlayer.isUsingAbility1() == true
-    # @Condition eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) != eventPlayer.baTarget
-    # @Condition eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).isAlive() == true
-    # @Condition 4 <= distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) and distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) <= eventPlayer.gaRange + 0.5
-    # @Condition isInLoS(eventPlayer, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())), BarrierLos.PASS_THROUGH_BARRIERS) == true
-
-    # do:
-    #     if eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).isAlive() and 4 <= distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) and distance(eventPlayer + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())) + vect(0, 1.2, 0)) <= eventPlayer.gaRange + 0.5 and isInLoS(eventPlayer, eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())), BarrierLos.PASS_THROUGH_BARRIERS) and eventPlayer.isAlive() and eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam())).isAlive() and eventPlayer.isUsingAbility1():
-    #         eventPlayer.baTarget = eventPlayer.getPlayerClosestToReticle(getOppositeTeam(eventPlayer.getTeam()))
-    #         eventPlayer.baDummy.detach()
-    #         eventPlayer.baDummy.attachTo(eventPlayer.baTarget, vect(0, 0, 0))
-    #     else:
-    #         eventPlayer.baDummy.detach()
-    #         eventPlayer.baDummy.attachTo(eventPlayer, vect(0, 35, 0))
-    #     wait()
-    # while RULE_CONDITION
-    # eventPlayer.baDummy.detach()
-    eventPlayer.baDummy.attachTo(eventPlayer.baTarget, vect(0, 0, 0))
-    waitUntil(eventPlayer.isInAir(), 99999)
-    wait(0.1)
-    # eventPlayer.baDummy.detach()
-    eventPlayer.baDummy.attachTo(eventPlayer, vect(0, 35, 0))
-
-
 rule "no rez reduce ult cost":
     @Event eachPlayer
     @Condition eventPlayer.mercyAbility2Version == 1
-    @Condition eventPlayer.getUltCharge() >= 80
+    @Condition eventPlayer.getUltCharge() >= 90
 
     eventPlayer.setUltCharge(100)
-
-
-rule "rez targeting":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.getAbilityCooldown(Button.ABILITY_2) == 0
-    @Condition distance(eventPlayer.getPosition() + eventPlayer.eyePositionOffset, eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).getPosition() + vect(0, 1.2, 0)) <= 5.5
-    @Condition isInLoS(eventPlayer.getEyePosition(), eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).getPosition() + vect(0, 1.2, 0), BarrierLos.PASS_THROUGH_BARRIERS) == true
-    @Condition eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam()).isDead() == true
-    @Condition eventPlayer.isDummy() == false
-
-    do:
-        eventPlayer.rezTarget = eventPlayer.getPlayerClosestToReticle(eventPlayer.getTeam())
-        wait()
-    while RULE_CONDITION
-    eventPlayer.rezTarget = null
-
-
-rule "valk 1.0 rez reset":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.mercyUltimateVersion == 2
-    @Condition eventPlayer.isUsingUltimate() == true
-    @Condition eventPlayer.isDummy() == false
-
-    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
-
-
-rule "valk 2.0 bonus rez charge":
-    @Event eachPlayer
-    @Hero mercy
-    @Condition eventPlayer.mercyUltimateVersion == 3
-    @Condition eventPlayer.isUsingUltimate() == true
-    @Condition eventPlayer.isDummy() == false
-
-    # eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
 
 
 rule "mass rez targeting":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion != 4
-    @Condition eventPlayer.mercyUltimateVersion == 1
+    @Condition eventPlayer.mercyUltimateVersion in [1, 2, 7]
     @Condition eventPlayer.getUltCharge() == 100
     @Condition len([player for player in getDeadPlayers(eventPlayer.getTeam()) if distance(eventPlayer.getPosition(), player.getPosition()) <= 15.5].exclude(eventPlayer)) >= 1
 
@@ -1089,7 +1058,7 @@ rule "mass rez targeting":
 rule "mass rez display":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyUltimateVersion == 1
+    @Condition eventPlayer.mercyUltimateVersion in [1, 2, 7]
     @Condition len(eventPlayer.massrezTargets) >= 1
 
     do:
@@ -1109,10 +1078,156 @@ rule "mass rez display":
     while RULE_CONDITION
 
 
+rule "valk 1.0 rez reset":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 3
+    @Condition eventPlayer.isUsingUltimate()
+    @Condition eventPlayer.isCastingExtendedUltimate == false
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
+
+
+rule "valk 2.0 bonus rez charge":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 4
+    @Condition eventPlayer.isUsingUltimate()
+    @Condition eventPlayer.isCastingExtendedUltimate == false
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.rezLastCooldown = eventPlayer.getAbilityCooldown(Button.ABILITY_2)
+    eventPlayer.rezLastTimeElapsed = getTotalTimeElapsed()
+    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 0)
+    hudHeader(eventPlayer, "{0} BONUS RESURRECT CHARGE AVAILABLE".format(abilityIconString(Hero.MERCY, Button.ABILITY_2)), HudPosition.TOP, 1001, rgb(247, 152, 20), HudReeval.STRING)
+    eventPlayer.rezBonusChargeHUD = getLastCreatedText()
+
+
+rule "valk 2.0 bonus rez charge expired":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 4
+    @Condition eventPlayer.isUsingUltimate() == false
+    @Condition eventPlayer.rezLastCooldown != -1
+    @Condition eventPlayer.rezLastTimeElapsed != -1
+    @Condition eventPlayer.isDummy() == false
+
+    eventPlayer.setAbilityCooldown(Button.ABILITY_2, eventPlayer.rezLastCooldown - (getTotalTimeElapsed() - eventPlayer.rezLastTimeElapsed))
+    eventPlayer.rezLastCooldown = -1
+    eventPlayer.rezLastTimeElapsed = -1
+    destroyHudText(eventPlayer.rezBonusChargeHUD)
+
+
+rule "valk 1.0/2.0 duration":
+    @Event eachPlayer
+    @Condition eventPlayer.getCurrentHero() == Hero.MERCY
+    @Condition eventPlayer.mercyUltimateVersion in [3, 4]
+    @Condition eventPlayer.isUsingUltimate() == true
+    
+    eventPlayer.preloadHero(Hero.MERCY)
+    eventPlayer.isCastingExtendedUltimate = true
+    waitUntil(eventPlayer.isDead(), 15)
+    if eventPlayer.isAlive():
+        eventPlayer.setUltCharge(100)
+        eventPlayer.forceButtonPress(Button.ULTIMATE)
+        waitUntil(eventPlayer.isDead(), 5.5)
+        if eventPlayer.isAlive():
+            eventPlayer.rezLastCooldown = eventPlayer.getAbilityCooldown(Button.ABILITY_2)
+            eventPlayer.startForcingHero(Hero.ANA)
+            eventPlayer.startForcingHero(Hero.MERCY)
+            eventPlayer.stopForcingCurrentHero()
+            eventPlayer.setAbilityCooldown(Button.ABILITY_2, eventPlayer.rezLastCooldown)
+            eventPlayer.rezLastCooldown = -1
+    eventPlayer.isCastingExtendedUltimate = false
+
+
+rule "valk canon":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 5
+    @Condition eventPlayer.isHoldingButton(Button.ULTIMATE) == true
+    @Condition eventPlayer.getUltCharge() == 100
+    @Condition eventPlayer.isAlive() == true
+    @Condition eventPlayer.hasStatusEffect(Status.ASLEEP) == false
+    @Condition eventPlayer.hasStatusEffect(Status.FROZEN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.HACKED) == false
+    @Condition eventPlayer.hasStatusEffect(Status.KNOCKED_DOWN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.STUNNED) == false
+    @Condition eventPlayer not in mercyPlayersInSetup
+
+    eventPlayer.disallowButton(Button.ABILITY_1)
+    eventPlayer.setUltCharge(0)
+    eventPlayer.setUltEnabled(false)
+    createDummy(eventPlayer.getCurrentHero(), eventPlayer.getTeam(), -1, eventPlayer.getPosition(), eventPlayer.getFacingDirection())
+    eventPlayer.valkCanonDummy = getLastCreatedEntity()
+    wait()
+    eventPlayer.valkCanonDummy.setUltCharge(100)
+    wait()
+    eventPlayer.valkCanonDummy.forceButtonPress(Button.ULTIMATE)
+    eventPlayer.valkCanonDummy.setInvisibility(Invis.ALL)
+    eventPlayer.valkCanonDummy.startThrottleInDirection(updateEveryTick(eventPlayer.getThrottle()), 1, Relativity.TO_PLAYER, Throttle.REPLACE_EXISTING, ThrottleReeval.DIRECTION_AND_MAGNITUDE)
+    eventPlayer.valkCanonDummy.startFacing(updateEveryTick(eventPlayer.getFacingDirection()), 9999, Relativity.TO_WORLD, FacingReeval.DIRECTION_AND_TURN_RATE)
+    eventPlayer.valkCanonDummy.isValkDummy = true
+    eventPlayer.attachTo(eventPlayer.valkCanonDummy, vect(0, 0, 0))
+    eventPlayer.valkCanonCurProgress = 100
+    progressBarHud(eventPlayer, eventPlayer.valkCanonCurProgress, "VALKYRIE", HudPosition.TOP, 10001, Color.WHITE, Color.WHITE, ProgressHudReeval.VALUES, SpecVisibility.DEFAULT)
+    eventPlayer.valkCanonBar = getLastCreatedText()
+    waitUntil(eventPlayer.isDead() or not eventPlayer.valkCanonDummy.isUsingUltimate(), 99999)
+    destroyDummy(eventPlayer.valkCanonDummy.getTeam(), eventPlayer.valkCanonDummy.getSlot())
+    eventPlayer.allowButton(Button.ABILITY_1)
+    eventPlayer.setUltEnabled(true)
+
+
+rule "valk canon update bar progress":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.valkCanonCurProgress == 100
+    
+    while eventPlayer.valkCanonCurProgress > 0 and eventPlayer.isAlive():
+        eventPlayer.valkCanonCurProgress -= 2
+        wait(2 / (100 / 15))
+    eventPlayer.valkCanonCurProgress = 0
+    destroyProgressBarHud(eventPlayer.valkCanonBar)
+
+
+rule "valk canon jump":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 5
+    @Condition eventPlayer.isHoldingButton(Button.JUMP) == true
+    
+    eventPlayer.valkCanonDummy.startForcingButton(Button.JUMP)
+    waitUntil(not eventPlayer.isHoldingButton(Button.JUMP), 99999)
+    eventPlayer.valkCanonDummy.stopForcingButton(Button.JUMP)
+
+
+rule "valk canon crouch":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 5
+    @Condition eventPlayer.isHoldingButton(Button.CROUCH) == true
+    
+    eventPlayer.valkCanonDummy.startForcingButton(Button.CROUCH)
+    waitUntil(not eventPlayer.isHoldingButton(Button.CROUCH), 99999)
+    eventPlayer.valkCanonDummy.stopForcingButton(Button.CROUCH)
+
+
+rule "valk canon GA":
+    @Event eachPlayer
+    @Hero mercy
+    @Condition eventPlayer.mercyUltimateVersion == 5
+    @Condition eventPlayer.isHoldingButton(Button.ABILITY_1) == true
+    
+    eventPlayer.valkCanonDummy.startForcingButton(Button.ABILITY_1)
+    waitUntil(not eventPlayer.isHoldingButton(Button.ABILITY_1), 99999)
+    eventPlayer.valkCanonDummy.stopForcingButton(Button.ABILITY_1)
+
+
 rule "medigun targeting":
     @Event playerDealtHealing
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer.mercyWeaponVersion == 6
 
     eventPlayer.medigunTarget = healee
     if eventPlayer.isCastingUbercharge:
@@ -1127,87 +1242,104 @@ rule "medigun targeting":
 rule "medigun healing":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer.mercyWeaponVersion == 6
     @Condition eventPlayer.isUsingUltimate() == false
-    @Condition eventPlayer not in mercyPlayersInMercySetup
+    @Condition eventPlayer not in mercyPlayersInSetup
     @Condition eventPlayer.isDummy() == false
     
-    eventPlayer.yellowbeamFactor = (40 / 45) * 100
+    eventPlayer.yellowbeamFactor = (30 / 45) * 100
 
 
 rule "medigun healing factor":
     @Event playerTookDamage
-    @Condition getPlayersOnHero(Hero.MERCY, eventPlayer.getTeam()).mercyWeaponVersion == 4
+    @Condition getPlayersOnHero(Hero.MERCY, eventPlayer.getTeam()).mercyWeaponVersion == 6
 
-    eventPlayer.medigunHealingFactor = max(eventPlayer.medigunHealingFactor - eventDamage / 200, 1)
-    wait(1.5, Wait.RESTART_WHEN_TRUE)
+    eventPlayer.medigunHealingFactor = max(eventPlayer.medigunHealingFactor - (eventDamage / 300), 1)
     while eventPlayer.medigunHealingFactor < 3:
         eventPlayer.medigunHealingFactor += 0.01
-        wait(3.5 / 100, Wait.RESTART_WHEN_TRUE)
+        wait(4 / 100, Wait.RESTART_WHEN_TRUE)
+    eventPlayer.medigunHealingFactor = 3
 
 
 rule "medigun healing mod":
     @Event eachPlayer
 
-    startHealingModification(eventPlayer, [player for player in getPlayersOnHero(Hero.MERCY, eventPlayer.getTeam()) if player.mercyWeaponVersion == 4], eventPlayer.medigunHealingFactor * 100, HealingReeval.RECEIVERS_HEALERS_AND_HEALPERCENT)
-
-
-rule "":
-    @Event eachPlayer
-    @Condition eventPlayer.hasSpawned()
-
-    createInWorldText(hostPlayer, eventPlayer.medigunHealingFactor, eventPlayer.getEyePosition() + vect(0, 1, 0), 1.5, Clip.SURFACES, WorldTextReeval.VISIBILITY_POSITION_STRING_AND_COLOR, Color.WHITE, SpecVisibility.DEFAULT)
+    startHealingModification(eventPlayer, [player for player in getPlayersOnHero(Hero.MERCY, eventPlayer.getTeam()) if player.mercyWeaponVersion == 6], eventPlayer.medigunHealingFactor * 100, HealingReeval.RECEIVERS_HEALERS_AND_HEALPERCENT)
 
 
 rule "medigun overheal":
     @Event playerReceivedHealing
     @Condition healer != healee
-    @Condition healer.mercyWeaponVersion == 4
+    @Condition healer.mercyWeaponVersion == 6
     @Condition healer.getCurrentHero() == Hero.MERCY
-    @Condition eventPlayer.getHealth() == eventPlayer.getMaxHealth()
-    @Condition eventPlayer.getHealthOfType(Health.NORMAL) - eventPlayer.getMaxHealthOfType(Health.NORMAL) < (eventPlayer.getMaxHealth() / 2)
+    @Condition eventPlayer.getHealth() >= eventPlayer.getMaxHealth()
+    @Condition eventPlayer.getHealthOfType(Health.NORMAL) - eventPlayer.getMaxHealthOfType(Health.NORMAL) < ((eventPlayer.getMaxHealth() / 2) - (eventPlayer.getMaxHealth() / 2 % 25))
 
     eventPlayer.currentOverhealth = eventPlayer.getHealthOfType(Health.NORMAL) - eventPlayer.getMaxHealthOfType(Health.NORMAL)
-    removeHealthPool(eventPlayer.overhealthPool)
-    eventPlayer.addHealthPool(Health.NORMAL, min((eventPlayer.getMaxHealth() / 2), eventPlayer.currentOverhealth + (40 * eventPlayer.medigunHealingFactor   ) / 32), false, false)
-    eventPlayer.overhealthPool = getLastCreatedHealthPool()
+    if eventPlayer.currentOverhealth < ((eventPlayer.maxHealth / 2) - (eventPlayer.maxHealth / 2 % 25)):
+        removeHealthPool(eventPlayer.overhealthPool)
+        eventPlayer.addHealthPool(Health.NORMAL, min((eventPlayer.getMaxHealth() / 2) - (eventPlayer.getMaxHealth() / 2 % 25), eventPlayer.currentOverhealth + (30 * eventPlayer.medigunHealingFactor) / 32), false, false)
+        eventPlayer.overhealthPool = getLastCreatedHealthPool()
     wait(0.5, Wait.RESTART_WHEN_TRUE)
     while eventPlayer.getHealthOfType(Health.NORMAL) > eventPlayer.getMaxHealthOfType(Health.NORMAL):
         eventPlayer.currentOverhealth = eventPlayer.getHealthOfType(Health.NORMAL) - eventPlayer.getMaxHealthOfType(Health.NORMAL)
         removeHealthPool(eventPlayer.overhealthPool)
         if eventPlayer.currentOverhealth <= 50 * 0.025:
             return
-        eventPlayer.addHealthPool(Health.NORMAL, eventPlayer.currentOverhealth - (eventPlayer.getMaxHealth() / 2) / 15 * 0.025, false, false)
+        eventPlayer.addHealthPool(Health.NORMAL, eventPlayer.currentOverhealth - ((eventPlayer.getMaxHealth() / 2) - (eventPlayer.getMaxHealth() / 2 % 25)) / 10 * 0.025, false, false)
         eventPlayer.overhealthPool = getLastCreatedHealthPool()
         wait(0.025, Wait.RESTART_WHEN_TRUE)
+    eventPlayer.currentOverhealth = 0
 
 
-rule "medigun overheal bug fix":
+rule "medigun unlimited overheal bug fix":
     @Event eachPlayer
-    @Condition eventPlayer.getHealthOfType(Health.NORMAL) * 999 > eventPlayer.getMaxHealthOfType(Health.NORMAL)
+    @Condition eventPlayer.getHealthOfType(Health.NORMAL) - eventPlayer.getMaxHealthOfType(Health.NORMAL) > eventPlayer.getMaxHealthOfType(Health.NORMAL) * 3
 
     eventPlayer.currentOverhealth = 0
     removeHealthPool(eventPlayer.overhealthPool)
+    # eventPlayer.setHealth(eventPlayer.getMaxHealth())
+
+
+rule "":
+    @Condition hostPlayer.hasSpawned()
+
+    # hudHeader(hostPlayer, hostPlayer.getMaxHealth(), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    # hudHeader(hostPlayer, hostPlayer.medigunTarget.getMaxHealth(), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    # hudHeader(hostPlayer, hostPlayer.medigunTarget.getHealthOfType(Health.NORMAL) - hostPlayer.medigunTarget.getMaxHealthOfType(Health.NORMAL), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    # hudHeader(hostPlayer, (hostPlayer.medigunTarget.getMaxHealth() / 2) - (hostPlayer.medigunTarget.getMaxHealth() / 2 % 25), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    hudHeader(hostPlayer, hostPlayer.medigunTarget.getHealthOfType(Health.NORMAL), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    hudHeader(hostPlayer, hostPlayer.medigunTarget.getMaxHealthOfType(Health.NORMAL), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    hudHeader(hostPlayer, hostPlayer.medigunTarget.getHealth(), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    hudHeader(hostPlayer, hostPlayer.medigunTarget.getMaxHealth(), HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
+    hudHeader(hostPlayer, hostPlayer.medigunTarget.currentOverhealth, HudPosition.LEFT, 999999, Color.WHITE, HudReeval.STRING)
 
 
 rule "vaccinator":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer.mercyAbility2Version == 7
     @Condition eventPlayer.isHoldingButton(Button.ABILITY_2) == true
     @Condition eventPlayer.getAbilityCooldown(Button.ABILITY_2) == 0
+    @Condition eventPlayer.isAlive() == true
+    @Condition eventPlayer.hasStatusEffect(Status.ASLEEP) == false
+    @Condition eventPlayer.hasStatusEffect(Status.FROZEN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.HACKED) == false
+    @Condition eventPlayer.hasStatusEffect(Status.KNOCKED_DOWN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.STUNNED) == false
+    @Condition eventPlayer not in mercyPlayersInSetup
 
     eventPlayer.isVaccinated = true
     eventPlayer.medigunTarget.isVaccinated = true
     wait(2.5)
-    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 10)
+    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 8)
 
 
 rule "getting vaccinated":
     @Event eachPlayer
     @Condition eventPlayer.isVaccinated == true
 
-    eventPlayer.setDamageReceived(25)
+    eventPlayer.setDamageReceived(50)
     playEffect(getAllPlayers(), DynamicEffect.BRIGITTE_REPAIR_PACK_ARMOR, eventPlayer.teamColor, eventPlayer, 1)
     playEffect(getAllPlayers(), DynamicEffect.SYMMETRA_TELEPORTER_REAPPEAR, eventPlayer.teamColor, eventPlayer, 1)
     createEffect(getAllPlayers(), Effect.GOOD_AURA, eventPlayer.teamColor, eventPlayer, 1.25, EffectReeval.NONE)
@@ -1228,22 +1360,32 @@ rule "getting vaccinated":
 rule "ubersaw":
     @Event playerDealtDamage
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer.mercyWeaponVersion == 6
     @Condition eventAbility == Button.MELEE
 
-    eventPlayer.setUltCharge(eventPlayer.getUltCharge() + 20)
+    eventPlayer.setUltCharge(eventPlayer.getUltCharge() + 15)
 
 
 rule "ubercharge":
     @Event eachPlayer
     @Hero mercy
-    @Condition eventPlayer.mercyWeaponVersion == 4
+    @Condition eventPlayer.mercyUltimateVersion == 8
     @Condition eventPlayer.isHoldingButton(Button.ULTIMATE) == true
     @Condition eventPlayer.getUltCharge() == 100
+    @Condition eventPlayer.isAlive() == true
+    @Condition eventPlayer.hasStatusEffect(Status.ASLEEP) == false
+    @Condition eventPlayer.hasStatusEffect(Status.FROZEN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.HACKED) == false
+    @Condition eventPlayer.hasStatusEffect(Status.KNOCKED_DOWN) == false
+    @Condition eventPlayer.hasStatusEffect(Status.STUNNED) == false
+    @Condition eventPlayer not in mercyPlayersInSetup
 
     eventPlayer.isCastingUbercharge = true
     eventPlayer.isUbercharged = true
     eventPlayer.medigunTarget.isUbercharged = true
+    createUltVoicelineDummy()
+    wait(1.5, Wait.RESTART_WHEN_TRUE)
+    destroyUltVoicelineDummy()
 
 
 rule "ubercharge drain rate":
@@ -1254,7 +1396,7 @@ rule "ubercharge drain rate":
 
     do:
         eventPlayer.setUltCharge(eventPlayer.getUltCharge() - 1)
-        wait(1 / 12.5 / max(len([player for player in getPlayers(eventPlayer.getTeam()) if player.hasStatusEffect(Status.INVINCIBLE)]) - 1, 1))
+        wait(1 / 10 / max(len([player for player in getPlayers(eventPlayer.getTeam()) if player.hasStatusEffect(Status.INVINCIBLE)]) - 1, 1))
     while RULE_CONDITION
     eventPlayer.isUbercharged = false
     eventPlayer.isCastingUbercharge = false
@@ -1264,17 +1406,18 @@ rule "getting ubercharged":
     @Event eachPlayer
     @Condition eventPlayer.isUbercharged == true
 
-    destroyEffect(eventPlayer.uberchargeVisualEffect1)
-    destroyEffect(eventPlayer.uberchargeVisualEffect2)
-    destroyEffect(eventPlayer.uberchargeSoundEffect)
-    eventPlayer.setStatusEffect(null, Status.INVINCIBLE, 9999)
-    playEffect(getAllPlayers(), DynamicEffect.SYMMETRA_TELEPORTER_REAPPEAR, eventPlayer.teamColor, eventPlayer, 1)
-    createEffect(getAllPlayers(), Effect.ECHO_CLONING, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.NONE)
-    eventPlayer.uberchargeVisualEffect1 = getLastCreatedEntity()
-    createEffect(eventPlayer, Effect.ANA_NANO_BOOSTED, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.NONE)
-    eventPlayer.uberchargeVisualEffect2 = getLastCreatedEntity()
-    createEffect(getAllPlayers(), Effect.ANA_NANO_BOOSTED_SOUND, eventPlayer.teamColor, eventPlayer, 100, EffectReeval.NONE)
-    eventPlayer.uberchargeSoundEffect = getLastCreatedEntity()
+    if not eventPlayer.hasStatusEffect(Status.INVINCIBLE):
+        destroyEffect(eventPlayer.uberchargeVisualEffect1)
+        destroyEffect(eventPlayer.uberchargeVisualEffect2)
+        destroyEffect(eventPlayer.uberchargeSoundEffect)
+        eventPlayer.setStatusEffect(null, Status.INVINCIBLE, 9999)
+        playEffect(getAllPlayers(), DynamicEffect.SYMMETRA_TELEPORTER_REAPPEAR, eventPlayer.teamColor, eventPlayer, 1)
+        createEffect(getAllPlayers(), Effect.ECHO_CLONING, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.NONE)
+        eventPlayer.uberchargeVisualEffect1 = getLastCreatedEntity()
+        createEffect(eventPlayer, Effect.ANA_NANO_BOOSTED, eventPlayer.teamColor, eventPlayer, 1, EffectReeval.NONE)
+        eventPlayer.uberchargeVisualEffect2 = getLastCreatedEntity()
+        createEffect(getAllPlayers(), Effect.ANA_NANO_BOOSTED_SOUND, eventPlayer.teamColor, eventPlayer, 100, EffectReeval.NONE)
+        eventPlayer.uberchargeSoundEffect = getLastCreatedEntity()
     waitUntil(not eventPlayer.isUbercharged, 20)
     eventPlayer.isUbercharged = false
     wait(1, Wait.RESTART_WHEN_TRUE)
@@ -1317,6 +1460,7 @@ rule "host instalock mercy":
 
     wait()
     hostPlayer.startForcingHero(Hero.MERCY)
+    hostPlayer.stopForcingCurrentHero()
 
 
 rule "host give ult when spawn":
@@ -1325,6 +1469,7 @@ rule "host give ult when spawn":
     @Condition debugHostPermaUlt == true
     @Condition hostPlayer.hasSpawned() == true
     
+    wait()
     hostPlayer.setUltCharge(100)
 
 
@@ -1343,10 +1488,11 @@ rule "host give ult when ult done":
     @Condition debugToggle == true
     @Condition debugHostPermaUlt == true
     @Condition hostPlayer.isUsingUltimate() == false
-    @Condition hostPlayer.getUltCharge() < 100
+    @Condition hostPlayer.getUltCharge() != 100
     @Condition hostPlayer.isCastingUbercharge == false
     @Condition hostPlayer.hasStatusEffect(Status.INVINCIBLE) == false
     
+    wait()
     hostPlayer.setUltCharge(100)
 
 
